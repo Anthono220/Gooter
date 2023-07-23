@@ -1,0 +1,1 @@
+variable = layer_sequence_create("Assets_1", 320, 160, seq_title_to_menu);
