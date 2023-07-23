@@ -1,6 +1,6 @@
 ![Gooter: VIRTUAL MONSTER](https://github.com/Anthono220Media/Gooter-VM/assets/69215045/463107e3-2ea4-4ddf-8bb7-938a293753b6)
 
-Play the game on Newgrounds:
+Play the game on Newgrounds: https://www.newgrounds.com/projects/games/4782038
 
 Follow Anthono220 (personal) on Twitter: https://twitter.com/Anthono220 and Newgrounds: https://anthono220.newgrounds.com/
 
