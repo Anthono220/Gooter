@@ -10,6 +10,8 @@ killscore = 0;
 
 courageReq = -1;
 
+
+
 //instance_create_layer(0, 0, "Spiri", obj_spiri);
 
 instance_create_layer(x + 0, y + 0, "UI", obj_hud);

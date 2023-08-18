@@ -1,3 +1,8 @@
+if (invin > 0)
+{
+	invin -= 1;
+}
+
 with(obj_aura) var l2E3A7449_0 = auraHEART <= 0;
 if(!l2E3A7449_0)
 {

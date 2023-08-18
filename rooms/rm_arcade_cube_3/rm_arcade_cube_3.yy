@@ -48,7 +48,6 @@
     {"name":"inst_27CEA794","path":"rooms/rm_arcade_cube_3/rm_arcade_cube_3.yy",},
     {"name":"inst_32832F3A","path":"rooms/rm_arcade_cube_3/rm_arcade_cube_3.yy",},
     {"name":"inst_63026818","path":"rooms/rm_arcade_cube_3/rm_arcade_cube_3.yy",},
-    {"name":"inst_7E24E4E","path":"rooms/rm_arcade_cube_3/rm_arcade_cube_3.yy",},
     {"name":"inst_7CC98A26_1","path":"rooms/rm_arcade_cube_3/rm_arcade_cube_3.yy",},
   ],
   "isDnd": false,
@@ -483,7 +482,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2AB34FBF_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_crate_missing_50r","path":"objects/obj_crate_missing_50r/obj_crate_missing_50r.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3120.0,"y":2416.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FF68D80_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_crate_missing_40r","path":"objects/obj_crate_missing_40r/obj_crate_missing_40r.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2256.0,"y":848.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1B068A12_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_crate_missing_60r","path":"objects/obj_crate_missing_60r/obj_crate_missing_60r.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":1408.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E24E4E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_crate_missing_40r","path":"objects/obj_crate_missing_40r/obj_crate_missing_40r.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":2400.0,},
       ],"layers":[],"properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FF000000",},
         {"name":"g_OutlineRadius","type":0,"value":"1",},
