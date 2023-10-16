@@ -91,9 +91,10 @@
   "LibraryEmitters": [
     {"name":"GM_hit_rogut","path":"particlelib/GM_hit_rogut/GM_hit_rogut.yy",},
     {"name":"GM_hit_rogut","path":"particlelib/GM_hit_rogut/GM_hit_rogut.yy",},
+    {"name":"GM_hit_rogut","path":"particlelib/GM_hit_rogut/GM_hit_rogut.yy",},
   ],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"input_radial_sector","path":"scripts/input_radial_sector/input_radial_sector.yy",},},
@@ -527,6 +528,7 @@
     {"roomId":{"name":"rm_arcade_cube_2","path":"rooms/rm_arcade_cube_2/rm_arcade_cube_2.yy",},},
     {"roomId":{"name":"rm_arcade_cube_3","path":"rooms/rm_arcade_cube_3/rm_arcade_cube_3.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"texgr_anthono220","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
