@@ -46,7 +46,7 @@
         {"name":"g_OutlinePixelScale","type":0,"value":"2",},
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":400,"effectEnabled":true,"effectType":"_filter_outline","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FF4FFDC_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_crate_missing_10r","path":"objects/obj_crate_missing_10r/obj_crate_missing_10r.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":242.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FF4FFDC_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_crate_missing","path":"objects/obj_crate_missing/obj_crate_missing.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":242.0,},
       ],"layers":[],"properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FF000000",},
         {"name":"g_OutlineRadius","type":0,"value":"1",},

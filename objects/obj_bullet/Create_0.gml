@@ -20,7 +20,7 @@ if (input_check("charge"))
 		sprite_index = spr_bullet_charge;
 		image_index = 0;
 
-		speed = 26.5;
+		speed = 23.5;
 
 		with(obj_aura) {
 		auraCHARGE += -1;
