@@ -380,7 +380,7 @@
     {"name":"input_binding_swap","order":11,"path":"scripts/input_binding_swap/input_binding_swap.yy",},
     {"name":"input_binding_scan_start","order":12,"path":"scripts/input_binding_scan_start/input_binding_scan_start.yy",},
     {"name":"obj_spawner","order":2,"path":"objects/obj_spawner/obj_spawner.yy",},
-    {"name":"spr_dash_counter_icon","order":3,"path":"sprites/spr_dash_counter_icon/spr_dash_counter_icon.yy",},
+    {"name":"spr_dash_counter_icon","order":2,"path":"sprites/spr_dash_counter_icon/spr_dash_counter_icon.yy",},
     {"name":"__input_gamepad_set_mapping","order":12,"path":"scripts/__input_gamepad_set_mapping/__input_gamepad_set_mapping.yy",},
     {"name":"input_check_double_released","order":3,"path":"scripts/input_check_double_released/input_check_double_released.yy",},
     {"name":"input_cursor_translate","order":14,"path":"scripts/input_cursor_translate/input_cursor_translate.yy",},
@@ -432,6 +432,6 @@
     {"name":"__input_config_icons","order":5,"path":"scripts/__input_config_icons/__input_config_icons.yy",},
     {"name":"obj_rogut_regular","order":3,"path":"objects/obj_rogut_regular/obj_rogut_regular.yy",},
     {"name":"spr_aura_charge","order":7,"path":"sprites/spr_aura_charge/spr_aura_charge.yy",},
-    {"name":"spr_heart_counter_icon","order":2,"path":"sprites/spr_heart_counter_icon/spr_heart_counter_icon.yy",},
+    {"name":"spr_heart_counter_icon","order":3,"path":"sprites/spr_heart_counter_icon/spr_heart_counter_icon.yy",},
   ],
 }
