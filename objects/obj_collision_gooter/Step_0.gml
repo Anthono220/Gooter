@@ -2,6 +2,13 @@ if (invin > 0)
 {
 	invin -= 1;
 }
+if (obj_aura.auraCOURAGE = 0)
+{
+	if (!instance_exists(obj_teleporter_arrow))
+	{
+		instance_create_layer(0,0,"Spiri",obj_teleporter_arrow);
+	}
+}
 
 with(obj_aura) var l2E3A7449_0 = auraHEART <= 0;
 if(!l2E3A7449_0)
