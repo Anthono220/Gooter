@@ -1,6 +1,5 @@
 // Thanks GM Guru
-if os_browser == browser_not_a_browser
-{
+
 	var sineWave = 0 + (1+sin(2*pi*current_time/1000 * 0.30)) * 0.8 
 	gpu_set_blendmode(bm_add)
 	for (c = 0; c < 360; c += 20){
@@ -8,6 +7,6 @@ if os_browser == browser_not_a_browser
 	}
 
 	
-}
+
 	gpu_set_blendmode(bm_normal)
 	draw_self()

@@ -27,3 +27,33 @@ if(auraFURY < 0)
 {
 	auraFURY = 0;
 }
+
+if(auraDASH > 99)
+{
+	auraDASH = 99;
+}
+
+if(auraBLAST > 99)
+{
+	auraBLAST = 99;
+}
+
+if(auraCHARGE > 99)
+{
+	auraCHARGE = 99;
+}
+
+if(auraFURY > 99)
+{
+	auraFURY = 99;
+}
+
+if(auraHEART > 99)
+{
+	auraHEART = 99;
+}
+
+if(auraFURY > 99)
+{
+	auraFURY = 99;
+}
