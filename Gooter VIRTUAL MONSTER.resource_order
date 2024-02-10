@@ -240,7 +240,6 @@
     {"name":"input_check_released","order":13,"path":"scripts/input_check_released/input_check_released.yy",},
     {"name":"spr_collision_gooter","order":3,"path":"sprites/spr_collision_gooter/spr_collision_gooter.yy",},
     {"name":"obj_bullet","order":11,"path":"objects/obj_bullet/obj_bullet.yy",},
-    {"name":"obj_spiri","order":8,"path":"objects/obj_spiri/obj_spiri.yy",},
     {"name":"input_virtual_destroy_all","order":3,"path":"scripts/input_virtual_destroy_all/input_virtual_destroy_all.yy",},
     {"name":"input_cursor_limit_get","order":7,"path":"scripts/input_cursor_limit_get/input_cursor_limit_get.yy",},
     {"name":"rm_init","order":2,"path":"rooms/rm_init/rm_init.yy",},

@@ -289,7 +289,6 @@
     {"id":{"name":"input_check_released","path":"scripts/input_check_released/input_check_released.yy",},},
     {"id":{"name":"spr_collision_gooter","path":"sprites/spr_collision_gooter/spr_collision_gooter.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
-    {"id":{"name":"obj_spiri","path":"objects/obj_spiri/obj_spiri.yy",},},
     {"id":{"name":"input_virtual_destroy_all","path":"scripts/input_virtual_destroy_all/input_virtual_destroy_all.yy",},},
     {"id":{"name":"input_cursor_limit_get","path":"scripts/input_cursor_limit_get/input_cursor_limit_get.yy",},},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
