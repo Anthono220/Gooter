@@ -338,6 +338,7 @@
     {"id":{"name":"obj_teleporter_inactive","path":"objects/obj_teleporter_inactive/obj_teleporter_inactive.yy",},},
     {"id":{"name":"input_binding_gamepad_button","path":"scripts/input_binding_gamepad_button/input_binding_gamepad_button.yy",},},
     {"id":{"name":"input_gamepad_get_description","path":"scripts/input_gamepad_get_description/input_gamepad_get_description.yy",},},
+    {"id":{"name":"fnt_killreq","path":"fonts/fnt_killreq/fnt_killreq.yy",},},
     {"id":{"name":"spr_gootershield","path":"sprites/spr_gootershield/spr_gootershield.yy",},},
     {"id":{"name":"input_system_verify","path":"scripts/input_system_verify/input_system_verify.yy",},},
     {"id":{"name":"input_cursor_elastic_set","path":"scripts/input_cursor_elastic_set/input_cursor_elastic_set.yy",},},

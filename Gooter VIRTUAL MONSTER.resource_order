@@ -286,6 +286,7 @@
     {"name":"input_profile_create","order":1,"path":"scripts/input_profile_create/input_profile_create.yy",},
     {"name":"input_binding_gamepad_button","order":2,"path":"scripts/input_binding_gamepad_button/input_binding_gamepad_button.yy",},
     {"name":"input_gamepad_get_description","order":5,"path":"scripts/input_gamepad_get_description/input_gamepad_get_description.yy",},
+    {"name":"fnt_killreq","order":2,"path":"fonts/fnt_killreq/fnt_killreq.yy",},
     {"name":"spr_gootershield","order":15,"path":"sprites/spr_gootershield/spr_gootershield.yy",},
     {"name":"input_system_verify","order":12,"path":"scripts/input_system_verify/input_system_verify.yy",},
     {"name":"input_cursor_elastic_set","order":4,"path":"scripts/input_cursor_elastic_set/input_cursor_elastic_set.yy",},
