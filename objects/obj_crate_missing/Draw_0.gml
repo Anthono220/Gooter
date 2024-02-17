@@ -1,8 +1,7 @@
 draw_self();
 
 draw_set_colour($FF2B24F2 & $ffffff);
-var l5ACB58E1_0=($FF2B24F2 >> 24);
-draw_set_alpha(l5ACB58E1_0 / $ff);
+draw_set_alpha(1);
 
 draw_set_font(fnt_killreq);
 

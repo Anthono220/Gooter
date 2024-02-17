@@ -3,11 +3,8 @@ if (other.invin == 0)
 
 	if(stateCower == 0)
 	{
-		with(obj_aura) 
-		{
-		auraHEART += -1;
-	
-		}
+		
+		obj_aura.auraHEART += -1;
 
 		sprite_index = spr_rogut_hiding;
 		image_index = 0;
@@ -16,16 +13,13 @@ if (other.invin == 0)
 
 		alarm_set(0, 60);
 
-		with(obj_aura) var l38FA0553_0 = auraHEART <= 0;
-		if(l38FA0553_0)
+
+		if(obj_aura.auraHEART <= 0)
 		{
-			with(obj_rogut_regular) instance_destroy();
+			instance_destroy(obj_rogut_regular);
 	
-			with(other) 
-			{
-			alarm_set(1, 240);
+			obj_collision_gooter.alarm_set(1, 240);
 		
-			}
 		}
 	}
 	other.invin = 10;

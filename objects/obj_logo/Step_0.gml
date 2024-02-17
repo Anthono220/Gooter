@@ -2,7 +2,7 @@ if(input_check_pressed("select"))
 {
 	instance_destroy();
 	instance_create_layer(x + 0, y + 0, "Instances", obj_seq_title_to_menu);
-	layer_sequence_destroy(variable);
+	layer_sequence_destroy(logoObj);
 }
 
 if(input_check_pressed("back"))

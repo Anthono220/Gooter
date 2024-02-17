@@ -28,11 +28,9 @@ if(!obj_aura.auraHEART <= 0)
 			if (dashDir != 1) dashDir = 1;
 			//var _rollparsys = part_system_create(par_gooter_roll);
 			//part_system_position(_rollparsys, x, y);
-		
-			with(obj_aura) {
-			auraDASH -= 1;
-			
-			}
+
+			obj_aura.auraDASH -= 1;
+
 		
 			alarm_set(0, 120);
 		}
@@ -42,10 +40,8 @@ if(!obj_aura.auraHEART <= 0)
 			//var _rollparsys = part_system_create(par_gooter_roll);
 			//part_system_position(_rollparsys, x, y);
 		
-			with(obj_aura) {
-			auraDASH -= 1;
-			
-			}
+			obj_aura.auraDASH -= 1;
+
 		
 			alarm_set(0, 120);
 		}
@@ -55,10 +51,9 @@ if(!obj_aura.auraHEART <= 0)
 			//var _rollparsys = part_system_create(par_gooter_roll);
 			//part_system_position(_rollparsys, x, y);
 		
-			with(obj_aura) {
-			auraDASH -= 1;
-			
-			}
+
+			obj_aura.auraDASH -= 1;
+
 		
 			alarm_set(0, 120);
 		}
@@ -68,10 +63,9 @@ if(!obj_aura.auraHEART <= 0)
 			//var _rollparsys = part_system_create(par_gooter_roll);
 			//part_system_position(_rollparsys, x, y);
 		
-			with(obj_aura) {
-			auraDASH -= 1;
-			
-			}
+
+			obj_aura.auraDASH -= 1;
+
 		
 			alarm_set(0, 120);
 		}

@@ -1,14 +1,10 @@
 if(stateCower == 0)
 {
-	with(obj_aura) {
-	auraBLAST += -2;
-	
-	}
 
-	with(obj_aura) {
-	auraCHARGE += -5;
+	obj_aura.auraBLAST += -2;
 	
-	}
+	obj_aura.auraCHARGE += -5;
+	
 
 	sprite_index = spr_rogut_hiding;
 	image_index = 0;

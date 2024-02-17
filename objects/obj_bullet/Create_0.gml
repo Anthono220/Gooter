@@ -22,12 +22,8 @@ if (input_check("charge"))
 
 		speed = 23.5;
 
-		with(obj_aura) {
-		auraCHARGE += -1;
+		
+		obj_aura.auraCHARGE += -1;
 	
 	}
 }
-}
-
-	//var _sys = part_system_create(par_bullet_shoot);
-	//part_system_position(_sys, x, y);
