@@ -18,7 +18,7 @@ if (other.invin == 0)
 		{
 			instance_destroy(obj_rogut_regular);
 	
-			obj_collision_gooter.alarm_set(1, 240);
+			with (obj_collision_gooter) alarm_set(1, 240);
 		
 		}
 	}

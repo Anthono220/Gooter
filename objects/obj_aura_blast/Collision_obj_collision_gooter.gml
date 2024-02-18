@@ -1,16 +1,9 @@
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 056C7C6F
-/// @DnDApplyTo : {obj_aura}
-/// @DnDArgument : "expr" "1"
-/// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "auraBLAST"
-with(obj_aura) {
-auraBLAST += 1;
+obj_aura.auraBLAST += 1;
 
-}
-
-/// @DnDAction : YoYo Games.Instances.Destroy_Instance
-/// @DnDVersion : 1
-/// @DnDHash : 479829A2
 instance_destroy();
+
+if (os_browser == browser_not_a_browser)
+{
+	var _collectsys = part_system_create(par_aura_collect_blast);
+	part_system_position(_collectsys, x, y);
+}
