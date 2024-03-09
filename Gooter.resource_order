@@ -1,0 +1,23 @@
+{
+  "FolderOrderSettings":[
+    {"name":"World 0 - Naked World","order":6,"path":"folders/Rooms/World 0 - Naked World.yy",},
+    {"name":"World 1 - Crossing Fields","order":7,"path":"folders/Rooms/World 1 - Crossing Fields.yy",},
+    {"name":"World 2 - Lantern Star","order":8,"path":"folders/Rooms/World 2 - Lantern Star.yy",},
+    {"name":"World 3 - Scorching Sands","order":9,"path":"folders/Rooms/World 3 - Scorching Sands.yy",},
+    {"name":"World 4 - Weeping Cavern","order":10,"path":"folders/Rooms/World 4 - Weeping Cavern.yy",},
+    {"name":"World 5 - Aqua Zone","order":11,"path":"folders/Rooms/World 5 - Aqua Zone.yy",},
+    {"name":"World 6 - Feelings of Winter","order":12,"path":"folders/Rooms/World 6 - Feelings of Winter.yy",},
+    {"name":"World 7 - Inno City","order":13,"path":"folders/Rooms/World 7 - Inno City.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"obj_init","order":4,"path":"objects/obj_init/obj_init.yy",},
+    {"name":"obj_soober","order":1,"path":"objects/obj_soober/obj_soober.yy",},
+    {"name":"obj_viewscale","order":1,"path":"objects/obj_viewscale/obj_viewscale.yy",},
+    {"name":"rm_anthono220","order":3,"path":"rooms/rm_anthono220/rm_anthono220.yy",},
+    {"name":"rm_init","order":5,"path":"rooms/rm_init/rm_init.yy",},
+    {"name":"rm_level_test","order":14,"path":"rooms/rm_level_test/rm_level_test.yy",},
+    {"name":"rm_title","order":2,"path":"rooms/rm_title/rm_title.yy",},
+    {"name":"spr_soober_roar","order":2,"path":"sprites/spr_soober_roar/spr_soober_roar.yy",},
+    {"name":"spr_test_bg","order":1,"path":"sprites/spr_test_bg/spr_test_bg.yy",},
+  ],
+}
