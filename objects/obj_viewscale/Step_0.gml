@@ -1,9 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (browser_width != width || browser_height != height)
+if (os_browser != browser_not_a_browser)
+{
+	if (browser_width != width || browser_height != height)
     {
-    width = min(base_width, browser_width);
-    height = min(base_height, browser_height);
-    scr_scalecanvas(base_width, base_height, width, height, true);
+		width = min(base_width, browser_width);
+		height = min(base_height, browser_height);
+		scr_scalecanvas(base_width, base_height, width, height, true);
     }
+}
+
