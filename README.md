@@ -14,16 +14,16 @@ Follow Gooter News on Twitter if you want deep cut news and devlogs for this gam
 Support Anthono220 (and therefore this project, and therefore future projects which I hope can also be open source) on Ko-Fi: https://ko-fi.com/anthono220
 
 ## License Information
-The CODE included is licensed under the MIT License. The CHARACTERS, SPRITES and accompanying CHARACTER SHEETS are licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). The sound effects aren't mine and are public domain unless stated otherwise in the credits. The music is free to use only under the conditions of the Anthono220 Music Usage Policy (https://www.anthono220.com/music-usage-policy).
+The CODE included is licensed under the MIT License. The CHARACTERS, SPRITES and accompanying CHARACTER SHEETS are licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). The SOUND EFFECTS aren't mine and are public domain unless stated otherwise in the credits. The MUSIC is free to use only under the conditions of the Anthono220 Music Usage Policy (https://www.anthono220.com/music-usage-policy).
 
 
 ## Game Description
 **Please note that this game currently requires a controller in order to play. 
 Input 5 (https://github.com/JujuAdams/Input) is used in this project, so chances are that most (if not all) of your favorite controllers will be supported.**
 
-Gooter wakes up one day to find his home, and the rest of the floating islands, being invaded by strange red creatures called Roguts!
+Gooter wakes up one day to find his home, the floating islands, being invaded by strange red creatures called Roguts!
 
-Luckily, Gooter's got a gun... which is his mouth... which is also kind of invisible. Yeah, totally normal stuff.
+Luckily, Gooter's got a gun!... which is his mouth... which is also kind of invisible. Yeah, totally normal stuff.
 
 And now, here's some text that's apparently supposed to make you play this game, if my cries for help won't:
 
@@ -38,6 +38,8 @@ And now, here's some text that's apparently supposed to make you play this game,
 In terms of direct contributions, right now I am only really looking for bug fixes, localization thingies, and features that I would probably want the community to do for me lol. Be sure to submit an issue and look at other issues before you do anything. Other than that, the best thing you can do is to share feedback and ideas. If you enjoyed this game, you can also share the game with your friends and even make stuff yourself.
 
 If you wish to support the game's development, ensure that I can make open source games in the future, and/or simply wanna say thank you, here's the link to my Ko-Fi again: https://ko-fi.com/anthono220
+
+**It is recommended that you use the lastest version of Game Maker (not a beta) before messing with the source code for any reason.**
 
 
 
