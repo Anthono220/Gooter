@@ -9,5 +9,5 @@ sprite_prefetch(spr_fury_counter_icon);
 sprite_prefetch(spr_courage_counter_icon);
 
 room_id = layer_get_target_room();
-spawn_id = 0;
-obj_id = 0;
+
+alarm_set(0, irandom_range(spawn_min, spawn_max));
