@@ -1,6 +1,6 @@
 //Maximum number of players that the game supports
 //For a singleplayer only game, this macro should be set to 1
-#macro INPUT_MAX_PLAYERS  4
+#macro INPUT_MAX_PLAYERS  1
 
 //Verb to use to allow a player to cancel the INPUT_SOURCE_MODE.JOIN source mode (multiplayer source assignment)
 //If you want to prevent a player from leaving the session then set this macro to <undefined>
