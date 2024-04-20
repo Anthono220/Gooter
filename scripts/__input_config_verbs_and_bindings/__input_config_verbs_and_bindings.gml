@@ -44,10 +44,10 @@ INPUT_DEFAULT_PROFILES = {
 		roll:  [input_binding_gamepad_button(gp_face3)],
 		spiri_reset: input_binding_gamepad_button(gp_stickr),
         
-        aim_up:    input_binding_gamepad_axis(gp_axisrv, true),
-        aim_down:  input_binding_gamepad_axis(gp_axisrv, false),
-        aim_left:  input_binding_gamepad_axis(gp_axisrh, true),
-        aim_right: input_binding_gamepad_axis(gp_axisrh, false),
+        aim_up:    [input_binding_gamepad_axis(gp_axisrv, true)],
+        aim_down:  [input_binding_gamepad_axis(gp_axisrv, false)],
+        aim_left:  [input_binding_gamepad_axis(gp_axisrh, true)],
+        aim_right: [input_binding_gamepad_axis(gp_axisrh, false)],
 		
         pause: input_binding_gamepad_button(gp_start),
 		menu: input_binding_gamepad_button(gp_select),
