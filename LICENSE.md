@@ -1,5 +1,4 @@
-The CODE included is licensed under the MIT License. The CHARACTERS, SPRITES and accompanying CHARACTER SHEETS are licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). 
-The SOUND EFFECTS aren't mine and are public domain unless stated otherwise in the credits. The MUSIC is free to use only under the conditions of the Anthono220 Music Usage Policy (https://www.anthono220.com/music-usage-policy).
+The CODE included is licensed under the MIT License (unless specified otherwise by a third-party library). The SFX, CHARACTERS, SPRITES and accompanying CHARACTER SHEETS are licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). The MUSIC is free to use only under the conditions of the Anthono220 Music Usage Policy (https://www.anthono220.com/music-usage-policy).
 
 ---
 
