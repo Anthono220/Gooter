@@ -1,3 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
-room_goto_next();
+/// @description Go to next room
+if (room == room_last) {
+		room_goto(rm_title);
+	} else {
+		room_goto_next();
+}

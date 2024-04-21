@@ -1,5 +1,9 @@
 instance_create_layer(x + 0, y + 0, "Player", obj_gooter);
 
-dashDir = 0;
+move_speed = 5;
+
+dash_dir = 0;
 
 invin = 0;
+
+layer_set_visible("Walls_coll",false);
