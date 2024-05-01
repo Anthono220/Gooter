@@ -77,7 +77,6 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI","folderPath":"folders/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Main Menu","folderPath":"folders/UI/Main Menu.yy","name":"Main Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Videos","folderPath":"folders/Videos.yy","name":"Videos","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"controllerblacklist.csv","CopyToMask":-1,"filePath":"datafiles","name":"controllerblacklist.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -85,6 +84,7 @@
     {"$GMIncludedFile":"","%Name":"licenses.txt","CopyToMask":-1,"filePath":"datafiles","name":"licenses.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"logo.mp4","CopyToMask":-1,"filePath":"datafiles","name":"logo.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"sdl2.txt","CopyToMask":-1,"filePath":"datafiles","name":"sdl2.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"test.mp4","CopyToMask":-1,"filePath":"datafiles","name":"test.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[
@@ -135,6 +135,7 @@
     {"id":{"name":"obj_teleporter_arrow","path":"objects/obj_teleporter_arrow/obj_teleporter_arrow.yy",},},
     {"id":{"name":"obj_teleporter_inactive","path":"objects/obj_teleporter_inactive/obj_teleporter_inactive.yy",},},
     {"id":{"name":"obj_viewscale","path":"objects/obj_viewscale/obj_viewscale.yy",},},
+    {"id":{"name":"obj_video","path":"objects/obj_video/obj_video.yy",},},
     {"id":{"name":"par_aura_collect_blast","path":"particles/par_aura_collect_blast/par_aura_collect_blast.yy",},},
     {"id":{"name":"par_aura_collect_charge","path":"particles/par_aura_collect_charge/par_aura_collect_charge.yy",},},
     {"id":{"name":"par_aura_collect_courage","path":"particles/par_aura_collect_courage/par_aura_collect_courage.yy",},},
@@ -149,9 +150,10 @@
     {"id":{"name":"par_trail_rogut","path":"particles/par_trail_rogut/par_trail_rogut.yy",},},
     {"id":{"name":"rm_anthono220","path":"rooms/rm_anthono220/rm_anthono220.yy",},},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"id":{"name":"rm_level_test","path":"rooms/rm_level_test/rm_level_test.yy",},},
     {"id":{"name":"rm_menu_home","path":"rooms/rm_menu_home/rm_menu_home.yy",},},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
-    {"id":{"name":"rm_level_test","path":"rooms/rm_level_test/rm_level_test.yy",},},
+    {"id":{"name":"rm_vid_test","path":"rooms/rm_vid_test/rm_vid_test.yy",},},
     {"id":{"name":"__input_binding_get_label","path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},},
     {"id":{"name":"__input_class_binding","path":"scripts/__input_class_binding/__input_class_binding.yy",},},
     {"id":{"name":"__input_class_chord_definition","path":"scripts/__input_class_chord_definition/__input_class_chord_definition.yy",},},
@@ -506,6 +508,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_vid_test","path":"rooms/rm_vid_test/rm_vid_test.yy",},},
     {"roomId":{"name":"rm_anthono220","path":"rooms/rm_anthono220/rm_anthono220.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_menu_home","path":"rooms/rm_menu_home/rm_menu_home.yy",},},
