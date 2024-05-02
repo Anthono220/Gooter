@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Floraisakus",
-    "path":"folders/Objects/Characters/Monsters/Floraisakus.yy",
+    "path":"folders/Objects/Characters/Enemies/Floraisakus.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

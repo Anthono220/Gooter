@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Floraisakus",
-    "path":"folders/Objects/Characters/Monsters/Floraisakus.yy",
+    "path":"folders/Objects/Characters/Enemies/Floraisakus.yy",
   },
   "parentObjectId":null,
   "persistent":false,

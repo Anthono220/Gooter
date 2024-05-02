@@ -21,5 +21,5 @@
   "sampleRate":48000,
   "soundFile":"mus_anthono220media.wav",
   "type":1,
-  "volume":1.0,
+  "volume":0.77,
 }

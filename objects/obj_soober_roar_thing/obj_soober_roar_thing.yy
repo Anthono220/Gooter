@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Soobers",
-    "path":"folders/Objects/Characters/Monsters/Soobers.yy",
+    "path":"folders/Objects/Characters/Enemies/Soobers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

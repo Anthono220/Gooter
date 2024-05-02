@@ -36,7 +36,7 @@
   "origin":4,
   "parent":{
     "name":"Roguts",
-    "path":"folders/Objects/Characters/Monsters/Roguts.yy",
+    "path":"folders/Objects/Characters/Enemies/Roguts.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

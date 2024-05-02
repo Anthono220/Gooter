@@ -12,8 +12,8 @@
   "duration":1.634625,
   "name":"snd_crate_break_3",
   "parent":{
-    "name":"SFX",
-    "path":"folders/Sounds/SFX.yy",
+    "name":"Objects",
+    "path":"folders/Sounds/SFX/Objects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

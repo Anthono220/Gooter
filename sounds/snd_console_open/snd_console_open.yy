@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_console_open",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.7827,
+  "name":"snd_console_open",
+  "parent":{
+    "name":"Console",
+    "path":"folders/Sounds/SFX/Console.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snd_console_open.mp3",
+  "type":1,
+  "volume":1.0,
+}

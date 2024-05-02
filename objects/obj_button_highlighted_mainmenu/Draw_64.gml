@@ -16,7 +16,7 @@ if splashnum == 21
 {
 	draw_set_colour(c_red);
 } else {
-	draw_set_colour(c_yellow);
+	draw_set_colour(c_aqua);
 }
 
 draw_set_alpha(1);

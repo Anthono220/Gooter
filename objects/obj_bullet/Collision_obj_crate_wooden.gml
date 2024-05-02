@@ -1,3 +1,4 @@
+
 if(obj_aura.auraCHARGE <= 0)
 {
 	with(other) {

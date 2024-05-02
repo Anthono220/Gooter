@@ -17,7 +17,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Roguts",
-    "path":"folders/Objects/Characters/Monsters/Roguts.yy",
+    "path":"folders/Objects/Characters/Enemies/Roguts.yy",
   },
   "parentObjectId":null,
   "persistent":false,
