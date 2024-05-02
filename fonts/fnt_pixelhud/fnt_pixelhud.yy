@@ -135,8 +135,8 @@
   "size":20.0,
   "styleName":"Medium",
   "textureGroupId":{
-    "name":"texgr_hud",
-    "path":"texturegroups/texgr_hud",
+    "name":"texgr_fonts",
+    "path":"texturegroups/texgr_fonts",
   },
   "TTFName":"",
   "usesSDF":false,

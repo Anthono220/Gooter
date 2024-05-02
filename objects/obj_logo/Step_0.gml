@@ -1,8 +1,6 @@
 if(input_check_pressed("select"))
 {
-	instance_destroy();
-	instance_create_layer(x + 0, y + 0, "Instances", obj_seq_title_to_menu);
-	layer_sequence_destroy(logoObj);
+	room_goto_next();
 }
 
 if(input_check_pressed("back"))

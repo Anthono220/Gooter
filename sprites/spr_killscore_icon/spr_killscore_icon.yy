@@ -81,8 +81,8 @@
   "swatchColours":null,
   "swfPrecision":2.525,
   "textureGroupId":{
-    "name":"texgr_unused",
-    "path":"texturegroups/texgr_unused",
+    "name":"texgr_hud",
+    "path":"texturegroups/texgr_hud",
   },
   "type":0,
   "VTile":false,

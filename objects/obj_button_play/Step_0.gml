@@ -7,7 +7,7 @@ if (input_check_pressed("select"))
 
 if (input_check_pressed("blast"))
 {
-	if (obj_button_highlighted_mainmenu.button_highlighted == 0) room_goto(rm_level_test);
+	if (obj_button_highlighted_mainmenu.button_highlighted == 0) room_goto(rm_lvl_test);
 }
 
 if (obj_button_highlighted_mainmenu.button_highlighted == 0) sprite_index = spr_button_play_highlighted;
