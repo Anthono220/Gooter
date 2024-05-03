@@ -33,7 +33,7 @@ And now, here's some text that's apparently supposed to make you play this game,
 - **SHOOT** your enemies and keep them away from you!
 - **BREAK** crates in order to unbox your way to the next level!
 - **COLLECT** different-colored orbs (known as Auras) to activate different abilities!
-- **FIGHT** unique and uniquely intense bosses with all kinds of tricks up their sleeves!
+- **FIGHT** unique and uniquely intense bosses with all kinds of tricks up their sleeves! (coming soon)
 
 
 ## YOU can help with development!
