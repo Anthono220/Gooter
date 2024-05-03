@@ -22,7 +22,7 @@
       ],"layers":[],"name":"Instances","properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FF000000",},
         {"name":"g_OutlineRadius","type":0,"value":"1",},
-        {"name":"g_OutlinePixelScale","type":0,"value":"2",},
+        {"name":"g_OutlinePixelScale","type":0,"value":"4",},
       ],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_297E7106","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_297E7106","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.50362873,"spriteId":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},"x":320.0,"y":127.55081,},

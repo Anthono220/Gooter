@@ -9,7 +9,7 @@ draw_set_alpha(1);
 draw_set_halign(fa_left);
 
 draw_text(20, 580, string("Version 0.1.0 | (c) 2025 Anthono220 Media"));
-draw_text(20, 600, string("This is an open source game and comes with NO WARRANTY. See licenses.txt for details."));
+draw_text(20, 600, string("This is an open source game and comes with NO WARRANTY. See licenses.txt for license details."));
 
 // Splash text
 if splashnum == 21
