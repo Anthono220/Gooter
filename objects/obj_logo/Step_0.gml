@@ -1,6 +1,6 @@
 if(input_check_pressed("select"))
 {
-	room_goto_next();
+	layer_sequence_create("Assets_2",(room_width/2),(room_height/2),seq_red_popup);
 }
 
 if(input_check_pressed("back"))
