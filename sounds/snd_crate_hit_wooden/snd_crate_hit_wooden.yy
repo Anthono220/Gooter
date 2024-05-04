@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_crate_break_2",
+  "%Name":"snd_crate_hit_wooden",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.826917,
-  "name":"snd_crate_break_2",
+  "duration":0.845,
+  "name":"snd_crate_hit_wooden",
   "parent":{
-    "name":"Objects",
-    "path":"folders/Sounds/SFX/Objects.yy",
+    "name":"Classic",
+    "path":"folders/Sounds/SFX/Classic.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"snd_crate_break_2.wav",
+  "soundFile":"snd_crate_hit_wooden.wav",
   "type":1,
   "volume":1.0,
 }

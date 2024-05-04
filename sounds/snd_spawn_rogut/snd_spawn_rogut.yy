@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_spawn_rogut",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.712,
+  "name":"snd_spawn_rogut",
+  "parent":{
+    "name":"Classic",
+    "path":"folders/Sounds/SFX/Classic.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_spawn_rogut.wav",
+  "type":0,
+  "volume":1.0,
+}

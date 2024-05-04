@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_teleport",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.782,
+  "name":"snd_teleport",
+  "parent":{
+    "name":"Classic",
+    "path":"folders/Sounds/SFX/Classic.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snd_teleport.wav",
+  "type":1,
+  "volume":1.0,
+}

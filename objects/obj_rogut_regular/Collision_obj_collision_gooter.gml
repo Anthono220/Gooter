@@ -17,6 +17,7 @@ if (other.invin == 0)
 		if(obj_aura.auraHEART <= 0)
 		{
 			instance_destroy(obj_rogut_regular);
+			audio_play_sound(snd_player_death,0,0,0.8);
 	
 			with (obj_collision_gooter) alarm_set(1, 240);
 		

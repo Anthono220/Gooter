@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_orbdash_charge",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":4.309333,
+  "name":"snd_orbdash_charge",
+  "parent":{
+    "name":"Classic",
+    "path":"folders/Sounds/SFX/Classic.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snd_orbdash_charge.wav",
+  "type":1,
+  "volume":1.0,
+}

@@ -1,4 +1,4 @@
-if(!obj_aura.auraHEART <= 0)
+if(obj_aura.auraHEART > 0)
 {
 		x = obj_collision_gooter.x;
 		y = obj_collision_gooter.y;
@@ -118,6 +118,7 @@ if (countdown_mode == 0)
 	
 			if(stateRoll == 0)
 			{
+				audio_play_sound(snd_orbdash_charge,0,0,0.8);
 				stateRoll = 1;
 			}
 

@@ -3,6 +3,7 @@ if(hp == 0)
 	/// @description Execute Code
 	var _deathsys = part_system_create(par_explosion);
 	part_system_position(_deathsys, x, y);
+	audio_play_sound(snd_rogut_die,0,0,0.8,0,(random_range(0.5,2)));
 
 	enemyDrop = irandom_range(1,8);
 

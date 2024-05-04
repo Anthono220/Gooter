@@ -97,7 +97,7 @@ if (obj_gooter.countdown_mode == 0)
 		{
 			if (input_check_pressed("left")) 
 			{
-				if (dashDir != 1) dashDir = 1;
+				if (dash_dir != 1) dash_dir = 1;
 				//var _rollparsys = part_system_create(par_gooter_roll);
 				//part_system_position(_rollparsys, x, y);
 
@@ -108,7 +108,7 @@ if (obj_gooter.countdown_mode == 0)
 			}
 			if (input_check_pressed("right")) 
 			{
-				if (dashDir != 2) dashDir = 2;
+				if (dash_dir != 2) dash_dir = 2;
 				//var _rollparsys = part_system_create(par_gooter_roll);
 				//part_system_position(_rollparsys, x, y);
 		
@@ -119,7 +119,7 @@ if (obj_gooter.countdown_mode == 0)
 			}
 			if (input_check_pressed("up")) 
 			{
-				if (dashDir != 3) dashDir = 3;
+				if (dash_dir != 3) dash_dir = 3;
 				//var _rollparsys = part_system_create(par_gooter_roll);
 				//part_system_position(_rollparsys, x, y);
 		
@@ -131,7 +131,7 @@ if (obj_gooter.countdown_mode == 0)
 			}
 			if (input_check_pressed("down")) 
 			{
-				if (dashDir != 4) dashDir = 4;
+				if (dash_dir != 4) dash_dir = 4;
 				//var _rollparsys = part_system_create(par_gooter_roll);
 				//part_system_position(_rollparsys, x, y);
 		
@@ -142,10 +142,10 @@ if (obj_gooter.countdown_mode == 0)
 				alarm_set(0, 120);
 			}
 		
-			if (dashDir = 1) x -= 8.5;
-			if (dashDir = 2) x += 8.5;
-			if (dashDir = 3) y -= 8.5;
-			if (dashDir = 4) y += 8.5;
+			if (dash_dir = 1) x -= 8.5;
+			if (dash_dir = 2) x += 8.5;
+			if (dash_dir = 3) y -= 8.5;
+			if (dash_dir = 4) y += 8.5;
 		}
 	}
 

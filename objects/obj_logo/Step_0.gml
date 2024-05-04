@@ -1,6 +1,7 @@
 if(input_check_pressed("select"))
 {
 	layer_sequence_create("Assets_2",(room_width/2),(room_height/2),seq_red_popup);
+	audio_play_sound(snd_select_1,0,0);
 }
 
 if(input_check_pressed("back"))
@@ -15,6 +16,7 @@ if(input_check_pressed("roll"))
 
 if(input_check_pressed("blast"))
 {
+	audio_play_sound(snd_select_1,0,0);
 	room_goto(rm_credits);
 }
 
