@@ -30,10 +30,10 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"countdown","filters":[],"listItems":[],"multiselect":false,"name":"countdown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
-    {"$GMObjectProperty":"","%Name":"playmusic","filters":[
+    {"$GMObjectProperty":"v1","%Name":"countdown","filters":[],"listItems":[],"multiselect":false,"name":"countdown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"playmusic","filters":[
         "GMSound",
-      ],"listItems":[],"multiselect":false,"name":"playmusic","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"mus_anthono220media","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"playmusic","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"mus_test","path":"sounds/mus_test/mus_test.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"mus_test","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

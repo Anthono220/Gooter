@@ -9,3 +9,8 @@ function seq_play_Moment()
 {
 	room_goto(rm_lvl_test);
 }
+
+function seq_settings_Moment()
+{
+	room_goto(rm_settings);
+}

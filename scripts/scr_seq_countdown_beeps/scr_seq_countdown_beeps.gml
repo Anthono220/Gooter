@@ -2,10 +2,10 @@
 
 function seq_countdown_playbeep1_Moment()
 {
-	audio_play_sound(snd_console_open,0,0);
+	audio_play_sound(snd_countdown_beep,0,0);
 }
 
 function seq_countdown_playbeep2_Moment()
 {
-	audio_play_sound(mus_anthono220media,0,0);
+	audio_play_sound(snd_countdown_go,0,0);
 }

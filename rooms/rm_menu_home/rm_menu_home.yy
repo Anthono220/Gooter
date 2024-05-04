@@ -40,10 +40,10 @@
         {"name":"g_BoxesRotation","type":0,"value":"0",},
         {"name":"g_BoxesRotation","type":0,"value":"0",},
         {"name":"g_BoxesRoundness","type":0,"value":"0",},
-        {"name":"g_BoxesColourSpeed","type":0,"value":"0.1",},
+        {"name":"g_BoxesColourSpeed","type":0,"value":"0.05",},
         {"name":"g_BoxesColours","type":0,"value":"256",},
         {"name":"g_BoxesSharpness","type":0,"value":"0.5",},
-        {"name":"g_BoxesPalette","type":2,"value":"_filter_boxes_palette",},
+        {"name":"g_BoxesPalette","type":2,"value":"spr_colorsprite",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"Effect_1_1","depth":500,"effectEnabled":true,"effectType":"_filter_boxes","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Effect_1_1","properties":[
         {"name":"g_BoxesScale","type":0,"value":"512",},
@@ -61,8 +61,8 @@
         {"name":"g_BoxesPalette","type":2,"value":"spr_colorsprite_blue",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4294950656,"depth":600,"effectEnabled":true,"effectType":"_filter_gradient","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
-        {"name":"g_GradientColour1","type":1,"value":"#FFFFBF00",},
-        {"name":"g_GradientColour2","type":1,"value":"#FFFF0000",},
+        {"name":"g_GradientColour1","type":1,"value":"#FFF2902E",},
+        {"name":"g_GradientColour2","type":1,"value":"#FFF7C461",},
         {"name":"g_GradientPosition1","type":0,"value":"0",},
         {"name":"g_GradientPosition1","type":0,"value":"0",},
         {"name":"g_GradientPosition2","type":0,"value":"1",},

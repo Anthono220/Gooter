@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_seq_countdown_beeps",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Sequence Scripts",
+    "path":"folders/Scripts/Sequence Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
