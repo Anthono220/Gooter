@@ -25,11 +25,6 @@ if (countdown_mode == 0)
 		}
 	}
 
-	if (input_check("menu"))
-	{
-		room_goto(rm_title);
-	}
-
 	if (input_check("shoot"))
 	{
 	
