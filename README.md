@@ -18,6 +18,8 @@ Support Anthono220 (and therefore this project, and therefore future projects wh
 ## License Information
 The CODE included is licensed under the MIT License (unless specified otherwise by a third-party library). The SFX, CHARACTERS, SPRITES and accompanying CHARACTER SHEETS are licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). The MUSIC is free to use only under the conditions of the Anthono220 Music Usage Policy (https://www.anthono220.com/music-usage-policy).
 
+The ANTHONO220 MEDIA logo, sound, and branding is proprietary and should only be used within fair use and official contexts. Please do not use the logo, sound, or branding in your own projects, especially ones using the aforementioned properties licensed to Creative Commons, without explicit permission. If you fork or spin off this product to a significant degree (i.e. fangames, new games that use the source code, and major modifications), it is requested that you replace the logo preceding the game with your own and that you clearly imply in the main menu or title screen that your fork or spinoff is not an official Anthono220 Media product.
+
 
 ## Game Description
 **Please note that this game currently requires a controller in order to play. 
