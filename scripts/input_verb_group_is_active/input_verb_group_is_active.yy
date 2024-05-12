@@ -6,7 +6,7 @@
   "name":"input_verb_group_is_active",
   "parent":{
     "name":"Verbs",
-    "path":"folders/Input/Verbs.yy",
+    "path":"folders/Extensions/Input/Verbs.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

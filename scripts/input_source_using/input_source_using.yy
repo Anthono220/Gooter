@@ -6,7 +6,7 @@
   "name":"input_source_using",
   "parent":{
     "name":"Sources",
-    "path":"folders/Input/Sources.yy",
+    "path":"folders/Extensions/Input/Sources.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

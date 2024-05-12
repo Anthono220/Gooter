@@ -10,7 +10,7 @@ image_angle = direction;
 	//instance_destroy();
 //}
 
-speed = 19.5;
+speed = 20.5;
 
 
 if (input_check("charge"))
@@ -21,7 +21,7 @@ if (input_check("charge"))
 		sprite_index = spr_bullet_charge;
 		image_index = 0;
 
-		speed = 23.5;
+		speed = 24.5;
 
 		
 		obj_aura.auraCHARGE += -1;

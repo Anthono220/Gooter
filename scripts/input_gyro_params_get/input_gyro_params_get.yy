@@ -6,7 +6,7 @@
   "name":"input_gyro_params_get",
   "parent":{
     "name":"Gyro",
-    "path":"folders/Input/Gyro.yy",
+    "path":"folders/Extensions/Input/Gyro.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"input_check_released",
   "parent":{
     "name":"Checkers",
-    "path":"folders/Input/Checkers.yy",
+    "path":"folders/Extensions/Input/Checkers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

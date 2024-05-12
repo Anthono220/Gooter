@@ -6,7 +6,7 @@
   "name":"input_accessibility_verb_cooldown_set",
   "parent":{
     "name":"Accessibility",
-    "path":"folders/Input/Accessibility.yy",
+    "path":"folders/Extensions/Input/Accessibility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"__input_finalize_verb_groups",
   "parent":{
     "name":"(System)",
-    "path":"folders/Input/(System).yy",
+    "path":"folders/Extensions/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"input_binding_is_valid",
   "parent":{
     "name":"Binding Access",
-    "path":"folders/Input/Binding Access.yy",
+    "path":"folders/Extensions/Input/Binding Access.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

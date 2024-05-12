@@ -9,14 +9,16 @@ Anthono220
 none yet lol
 
 - Extensions and Tutorials -
-JujuAdams - Input
+JujuAdams - Input, Chatterbox, Scribble
+offalynne - Input
 DaveTech - Developer Console
 Edward Lance Lorilla - Credits
 GM Guru - Object glowing
 GameMakerStation (Matharoo) - Smooth camera
-Samuel Venable - xProcess
+Samuel Venable - xProcess, Dialog Module
 Sabo - Newgrounds API
 Shaun Spalding - Pause System
+stoozey - SSave
 And some others I probably missed
 
 - Software Used -

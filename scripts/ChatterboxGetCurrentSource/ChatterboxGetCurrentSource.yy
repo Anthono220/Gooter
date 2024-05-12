@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ChatterboxGetCurrentSource",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ChatterboxGetCurrentSource",
+  "parent":{
+    "name":"Chatterboxes",
+    "path":"folders/Extensions/Chatterbox/Chatterboxes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

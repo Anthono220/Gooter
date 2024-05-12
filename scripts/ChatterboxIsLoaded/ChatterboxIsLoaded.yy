@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ChatterboxIsLoaded",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ChatterboxIsLoaded",
+  "parent":{
+    "name":"Setup",
+    "path":"folders/Extensions/Chatterbox/Setup.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

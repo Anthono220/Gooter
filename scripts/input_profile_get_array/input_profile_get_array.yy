@@ -6,7 +6,7 @@
   "name":"input_profile_get_array",
   "parent":{
     "name":"Profiles",
-    "path":"folders/Input/Profiles.yy",
+    "path":"folders/Extensions/Input/Profiles.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

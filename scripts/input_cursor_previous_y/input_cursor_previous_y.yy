@@ -6,7 +6,7 @@
   "name":"input_cursor_previous_y",
   "parent":{
     "name":"Cursor",
-    "path":"folders/Input/Cursor.yy",
+    "path":"folders/Extensions/Input/Cursor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

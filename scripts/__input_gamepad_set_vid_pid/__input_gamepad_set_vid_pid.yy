@@ -6,7 +6,7 @@
   "name":"__input_gamepad_set_vid_pid",
   "parent":{
     "name":"(System)",
-    "path":"folders/Input/(System).yy",
+    "path":"folders/Extensions/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

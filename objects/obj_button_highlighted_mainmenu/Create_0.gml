@@ -3,7 +3,7 @@
 layer_sequence_create("Assets_2",(room_width/2),(room_height/2),seq_red_fadeout);
 button_highlighted = 0;
 
-splashnum = irandom_range(0,63);
+splashnum = irandom_range(0,80);
 
 if (splashnum == 0) splashtxt = "Welcome to Gooter!"
 else if (splashnum == 1) splashtxt = "Open Source!"
@@ -69,3 +69,21 @@ else if (splashnum == 60) splashtxt = "Joe!"
 else if (splashnum == 61) splashtxt = "Batman pez dispenser!"
 else if (splashnum == 62) splashtxt = "The color palette is epik-216!"
 else if (splashnum == 63) splashtxt = "I can't believe it's not Super Mario 64!"
+else if (splashnum == 64) splashtxt = "This splash text appears twice!"
+else if (splashnum == 65) splashtxt = "This splash text appears twice!"
+else if (splashnum == 66) splashtxt = "Better than Overwatch!"
+else if (splashnum == 67) splashtxt = "Give me back that Fillet-o-Fish! Give me that fish!"
+else if (splashnum == 68) splashtxt = "There's no official Discord server for this game!"
+else if (splashnum == 69) splashtxt = "Splash text, huh? Wonder where I've seen that before..."
+else if (splashnum == 70) splashtxt = "Way too many splash texts in this game!"
+else if (splashnum == 71) splashtxt = "It even comes with a tutorial!"
+else if (splashnum == 72) splashtxt = "Moddable!"
+else if (splashnum == 73) splashtxt = "Loves his wife!"
+else if (splashnum == 74) splashtxt = "There's no secrets in the code!"
+else if (splashnum == 75) splashtxt = "Playable on any controller! (but that doesn't mean you should)"
+else if (splashnum == 76) splashtxt = "We don't talk about the incident."
+else if (splashnum == 77) splashtxt = "Manufactured with love!"
+else if (splashnum == 78) splashtxt = "Makes your dreams come alive!"
+else if (splashnum == 79) splashtxt = "I'm running out of references!"
+else if (splashnum == 80) splashtxt = "Fun for the whole family! (your dog will probably hate it, though)"
+else if (splashnum == 81) splashtxt = "Makes Studio Ghibli food look good!"

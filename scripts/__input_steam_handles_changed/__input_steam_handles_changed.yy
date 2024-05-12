@@ -6,7 +6,7 @@
   "name":"__input_steam_handles_changed",
   "parent":{
     "name":"(System)",
-    "path":"folders/Input/(System).yy",
+    "path":"folders/Extensions/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

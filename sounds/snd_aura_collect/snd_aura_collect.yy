@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_aura_collect",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":320,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.712,
+  "name":"snd_aura_collect",
+  "parent":{
+    "name":"Objects",
+    "path":"folders/Sounds/SFX/Objects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snd_aura_collect.wav",
+  "type":1,
+  "volume":1.0,
+}

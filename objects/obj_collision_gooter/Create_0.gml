@@ -1,6 +1,6 @@
 instance_create_layer(x + 0, y + 0, "Player", obj_gooter);
 
-move_speed = 5;
+move_speed = 6;
 
 dash_dir = 0;
 

@@ -28,7 +28,13 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"kill_req","filters":[],"listItems":[],"multiselect":false,"name":"kill_req","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"kill_req","filters":[],"listItems":[],"multiselect":false,"name":"kill_req","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"crate_type","filters":[
+        "GMObject",
+      ],"listItems":[],"multiselect":false,"name":"crate_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_crate_wooden","path":"objects/obj_crate_wooden/obj_crate_wooden.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_crate_wooden","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"special_surprise","filters":[
+        "GMObject",
+      ],"listItems":[],"multiselect":false,"name":"special_surprise","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"input_player_ghost_set",
   "parent":{
     "name":"Players",
-    "path":"folders/Input/Players.yy",
+    "path":"folders/Extensions/Input/Players.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

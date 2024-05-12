@@ -4,6 +4,7 @@ obj_aura.auraHEART += 2;
 
 obj_gooter.courageReq += -1;
 
+audio_play_sound(snd_aura_collect,0,0,1,0,(random_range(0.6,1)));
 
 instance_destroy();
 

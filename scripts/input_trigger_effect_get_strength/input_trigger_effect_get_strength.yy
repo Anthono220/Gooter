@@ -6,7 +6,7 @@
   "name":"input_trigger_effect_get_strength",
   "parent":{
     "name":"Trigger Effects",
-    "path":"folders/Input/Trigger Effects.yy",
+    "path":"folders/Extensions/Input/Trigger Effects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

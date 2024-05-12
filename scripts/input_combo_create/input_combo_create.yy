@@ -6,7 +6,7 @@
   "name":"input_combo_create",
   "parent":{
     "name":"Extended Verbs",
-    "path":"folders/Input/Extended Verbs.yy",
+    "path":"folders/Extensions/Input/Extended Verbs.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

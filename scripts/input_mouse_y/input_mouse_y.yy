@@ -6,7 +6,7 @@
   "name":"input_mouse_y",
   "parent":{
     "name":"Mouse (Direct)",
-    "path":"folders/Input/Mouse (Direct).yy",
+    "path":"folders/Extensions/Input/Mouse (Direct).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

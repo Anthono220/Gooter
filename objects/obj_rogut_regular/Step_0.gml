@@ -7,13 +7,13 @@ if(stateCower == 0)
 	if (hp < 5)
 	{
 	sprite_index = spr_rogut_dying;
-	speed = 3;
+	speed = 4;
 	}
 	
 	if (hp > 5)
 	{
 	sprite_index = spr_rogut_regular;
-	speed = 4;
+	speed = 5;
 	}
 	
 
