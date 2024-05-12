@@ -31,7 +31,7 @@ And now, here's some text that's apparently supposed to make you play this game,
 
 ## License Information
 
-Read LICENSE.md for complete license information.
+Read LICENSE.md or datafiles/licenses.txt for complete license information.
 
 ## YOU can help with development!
 
