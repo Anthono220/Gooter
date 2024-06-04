@@ -1,4 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+// This object kills the in-game HUD when created
 instance_destroy(obj_hud, true);
 instance_destroy(self, true);
