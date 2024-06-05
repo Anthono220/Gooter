@@ -8,8 +8,8 @@
   "name":"obj_hud_kill",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/UI.yy",
+    "name":"HUD",
+    "path":"folders/UI/HUD.yy",
   },
   "parentObjectId":null,
   "persistent":false,

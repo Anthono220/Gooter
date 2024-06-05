@@ -2,16 +2,14 @@
 draw_set_alpha(0.7);
 draw_rectangle_color(0,580,1280,640,#141223,#141223,#141223,#141223,0);
 
-// Courage
+
+// = Aura icons and text = \\
+
+// Set font and alpha for icons and text
 draw_set_alpha(1);
 draw_set_font(fnt_pixelhud);
 
-draw_sprite(spr_courage_counter_icon, 0, 640, 600);
-
-draw_set_colour(#B15AE8 & c_white);
-draw_set_halign(fa_center);
-
-draw_text(640, 600, string("") + string(obj_gooter.courageReq));
+// // HUD left side
 
 // Heart
 draw_sprite(spr_heart_counter_icon, 0, 64, 600);
@@ -57,6 +55,16 @@ draw_set_halign(fa_center);
 draw_set_alpha(1);
 
 draw_text(320, 600, string("") + string(obj_aura.auraFURY));
+
+// // HUD right side
+
+// Courage
+draw_sprite(spr_courage_counter_icon, 0, 1120, 600);
+
+draw_set_colour(#B15AE8 & c_white);
+draw_set_halign(fa_center);
+
+draw_text(1120, 600, string("") + string(obj_gooter.courageReq));
 
 // Killscore
 draw_sprite(spr_killscore_icon, 0, 1184, 600);

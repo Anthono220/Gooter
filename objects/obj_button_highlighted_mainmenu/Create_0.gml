@@ -3,7 +3,7 @@
 layer_sequence_create("Assets_2",(room_width/2),(room_height/2),seq_red_fadeout);
 button_highlighted = 0;
 
-splashnum = irandom_range(0,80);
+splashnum = irandom_range(0,105);
 
 if (splashnum == 0) splashtxt = "Welcome to Gooter!"
 else if (splashnum == 1) splashtxt = "Open Source!"
@@ -87,3 +87,27 @@ else if (splashnum == 78) splashtxt = "Makes your dreams come alive!"
 else if (splashnum == 79) splashtxt = "I'm running out of references!"
 else if (splashnum == 80) splashtxt = "Fun for the whole family! (your dog will probably hate it, though)"
 else if (splashnum == 81) splashtxt = "Makes Studio Ghibli food look good!"
+else if (splashnum == 82) splashtxt = "Just long enough to see my way!"
+else if (splashnum == 83) splashtxt = "Find my way! (It's endless)"
+else if (splashnum == 84) splashtxt = "Also play This Fish Cannot Swim!"
+else if (splashnum == 85) splashtxt = "Better use of your time than Twitter!"
+else if (splashnum == 86) splashtxt = "Probably won't sue you!"
+else if (splashnum == 87) splashtxt = "If he can shoot, then where's his mouth?"
+else if (splashnum == 88) splashtxt = "Triple text!"
+else if (splashnum == 89) splashtxt = "Triple text!"
+else if (splashnum == 90) splashtxt = "Triple text!"
+else if (splashnum == 91) splashtxt = "Listen to the soundtrack on NetEase!"
+else if (splashnum == 92) splashtxt = "Listen to the soundtrack on TikTok!"
+else if (splashnum == 93) splashtxt = "Listen to the soundtrack on Anghami!"
+else if (splashnum == 94) splashtxt = "Listen to the soundtrack on MediaNet!"
+else if (splashnum == 95) splashtxt = "Listen to the soundtrack on Boomplay!"
+else if (splashnum == 96) splashtxt = "Listen to the soundtrack on Facebook and Instagram!"
+else if (splashnum == 97) splashtxt = "Listen to the soundtrack on Adaptr!"
+else if (splashnum == 98) splashtxt = "Listen to the soundtrack on Flo!"
+else if (splashnum == 99) splashtxt = "Listen to the soundtrack on Claro Musica!"
+else if (splashnum == 100) splashtxt = "Listen to the soundtrack on Snapchat!"
+else if (splashnum == 101) splashtxt = "Listen to the soundtrack on Joox!"
+else if (splashnum == 102) splashtxt = "Listen to the soundtrack on Kuack Media!"
+else if (splashnum == 103) splashtxt = "Listen to the soundtrack on Quobuz!"
+else if (splashnum == 104) splashtxt = "Listen to the soundtrack on Saavn!"
+else if (splashnum == 105) splashtxt = "Listen to the soundtrack on Tencent!"
