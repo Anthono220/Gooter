@@ -20,3 +20,11 @@ When making contributions:
 - PLEASE open up an issue before you begin work (be sure to check for similar issue first, too!) so that you can see if your issue is even worth working on or if someone else can handle it.
 - Please be aware that if I put you in the credits from a direct contribution, you will be credited as your GitHub username.
 - Be respectful, mature, and cool, always!
+
+## Know GameMaker?
+To contribute and improve this game's code, you must have a fairly decent understanding of GML (GameMaker Language). For other stuff you might need to understand JSON and other languages but for the actual gameplay itself it's GML.
+
+If you do, then Gooter would like your help! Heck, even if you can't or don't want to directly contribute to the code, answering GML-related questions and helping others contribute code is more than enough.
+
+## In conclusion
+Now matter how you choose to help, thank you so much for even just the thought of contributing to the development of this game. Together, we can all make Gooter the best it can be, perhaps even the greatest game to ever grace this world lmao
