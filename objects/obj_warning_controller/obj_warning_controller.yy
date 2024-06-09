@@ -1,20 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gooter",
+  "%Name":"obj_warning_controller",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":70,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":116,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":78,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gooter",
+  "name":"obj_warning_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gooter",
-    "path":"folders/Objects/Characters/Gooter.yy",
+    "name":"UI",
+    "path":"folders/UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_gooter",
-    "path":"sprites/spr_gooter/spr_gooter.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
