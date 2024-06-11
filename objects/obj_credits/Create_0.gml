@@ -1,5 +1,4 @@
 text = @"
-
 Gooter
 
 - Main Developer -

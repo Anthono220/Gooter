@@ -14,8 +14,6 @@ countdown_mode = 0;
 
 instance_create_layer(x + 0, y + 0, "UI", obj_camera);
 
-instance_create_layer(x + 0, y + 0, "UI", obj_viewscale);
-
 instance_create_layer(x + 0, y + 0, "UI", obj_aura);
 
 instance_create_layer(x + 0, y + 0, "UI", obj_hud);

@@ -156,6 +156,8 @@ if (obj_gooter.countdown_mode == 0)
 				 if (_left_top_front == 0 and _left_bot_front == 0 and _left_top_fence == 0 and _left_bot_fence == 0 and _left_top_coll == 0 and _left_bot_coll == 0) 
 				 { 
 					 x -= (move_speed + 2.5);	
+				 } else {
+					 obj_gooter.stateRoll = 0;
 				 }
 			}
 			if (dash_dir = 2)
@@ -172,6 +174,8 @@ if (obj_gooter.countdown_mode == 0)
 				 if (_right_top_front == 0 and _right_bot_front == 0 and _right_top_fence == 0 and _right_bot_fence == 0 and _right_top_coll == 0 and _right_bot_coll == 0) 
 				 { 
 					 x += (move_speed + 2.5);	
+				 } else {
+					 obj_gooter.stateRoll = 0;
 				 }
 			}
 			if (dash_dir = 3)
@@ -188,6 +192,8 @@ if (obj_gooter.countdown_mode == 0)
 				 if (_up_left_front == 0 and _up_right_front == 0 and _up_left_fence == 0 and _up_right_fence == 0 and _up_left_coll == 0 and _up_right_coll == 0) 
 				 { 
 					 y -= (move_speed + 2.5);	
+				 } else {
+					 obj_gooter.stateRoll = 0;
 				 }
 			}
 			if (dash_dir = 4)
@@ -204,6 +210,8 @@ if (obj_gooter.countdown_mode == 0)
 				 if (_down_left_front == 0 and _down_right_front == 0 and _down_left_fence == 0 and _down_right_fence == 0 and _down_left_coll == 0 and _down_right_coll == 0) 
 				 { 
 					 y += (move_speed + 2.5);	
+				 } else {
+					 obj_gooter.stateRoll = 0;
 				 }
 			}
 		}

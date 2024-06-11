@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_floraisaku_shoot",
-    "path":"sprites/spr_floraisaku_shoot/spr_floraisaku_shoot.yy",
+    "name":"spr_floraisaku_idle",
+    "path":"sprites/spr_floraisaku_idle/spr_floraisaku_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -447,8 +447,8 @@
   "size":150.0,
   "styleName":"Regular",
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"texgr_fonts",
+    "path":"texturegroups/texgr_fonts",
   },
   "TTFName":"",
   "usesSDF":true,
