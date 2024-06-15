@@ -65,11 +65,7 @@
           -2,0,-74,-2147483648,1,0,-43,-2147483648,-2,0,-74,-2147483648,1,0,-43,-2147483648,-2,0,-74,-2147483648,
           1,0,-43,-2147483648,-2,0,-74,-2147483648,1,0,-43,-2147483648,-2,0,-74,-2147483648,1,0,-4358,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"til_tileset","path":"tilesets/til_tileset/til_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Walls_fe","depth":1100,"effectEnabled":true,"effectType":"_filter_outline","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Walls_fe","properties":[
-        {"name":"g_OutlineColour","type":1,"value":"#FF000000",},
-        {"name":"g_OutlineRadius","type":0,"value":"1",},
-        {"name":"g_OutlinePixelScale","type":0,"value":"2",},
-      ],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[-8160,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"til_tileset","path":"tilesets/til_tileset/til_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"Walls_fe","depth":1100,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Walls_fe","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[-8160,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"til_tileset","path":"tilesets/til_tileset/til_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Walls_t","depth":1200,"effectEnabled":true,"effectType":"_filter_outline","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Walls_t","properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FF000000",},
         {"name":"g_OutlineRadius","type":0,"value":"1",},

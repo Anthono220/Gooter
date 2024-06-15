@@ -41,7 +41,7 @@ if (countdown_mode == 0)
 		
 						bullet_cooldown = 1;
 				
-						alarm_set(0, 12);
+						alarm_set(0, 10);
 					}
 				}
 			}
