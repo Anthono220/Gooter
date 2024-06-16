@@ -8,6 +8,8 @@ controller_mode = 1;
 
 killscore = 0;
 
+killscore_miniboss = 0;
+
 courageReq = -1;
 
 countdown_mode = 0;

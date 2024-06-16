@@ -11,8 +11,8 @@
   "name":"obj_crate_wooden",
   "overriddenProperties":[],
   "parent":{
-    "name":"Wooden",
-    "path":"folders/Objects/Crates/Wooden.yy",
+    "name":"Crates",
+    "path":"folders/Objects/Crates/Crates.yy",
   },
   "parentObjectId":null,
   "persistent":false,
