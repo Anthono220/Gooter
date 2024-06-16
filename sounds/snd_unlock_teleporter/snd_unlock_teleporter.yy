@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_unlock_teleporter",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":6.92885,
+  "name":"snd_unlock_teleporter",
+  "parent":{
+    "name":"Objects",
+    "path":"folders/Sounds/SFX/Objects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snd_unlock_teleporter.mp3",
+  "type":1,
+  "volume":1.0,
+}

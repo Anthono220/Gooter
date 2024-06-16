@@ -1,6 +1,9 @@
 if(stateCower == 0)
 {
-
+	var _hitsys = part_system_create(par_hit_rogut);
+	part_system_position(_hitsys, x, y);
+	audio_play_sound(snd_enemy_collision,0,0,0.8);
+	
 	obj_aura.auraBLAST += -2;
 	
 	obj_aura.auraCHARGE += -5;

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_unlock_crate",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.7827,
+  "name":"snd_unlock_crate",
+  "parent":{
+    "name":"Objects",
+    "path":"folders/Sounds/SFX/Objects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snd_unlock_crate.mp3",
+  "type":1,
+  "volume":1.0,
+}
