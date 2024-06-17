@@ -13,7 +13,7 @@ if(hp == 0)
 	obj_gooter.killscore += 1;
 	var _deathsys = part_system_create(par_dust);
 	part_system_position(_deathsys, x, y);
-	audio_play_sound(snd_rogut_die,0,0,0.8,0,(random_range(0.5,2)));
+	audio_play_sound(snd_rogut_die,0,0,obj_settings.settings_vol_sfx,0,(random_range(0.5,2)));
 
 	if instance_number(obj_aura_heart) < 6 && instance_number(obj_aura_dash) < 6 && instance_number(obj_aura_blast) < 6 && instance_number(obj_aura_charge) < 6 && instance_number(obj_aura_fury) < 6
 	{

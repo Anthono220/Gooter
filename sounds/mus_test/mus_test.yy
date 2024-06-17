@@ -21,5 +21,5 @@
   "sampleRate":48000,
   "soundFile":"mus_test.wav",
   "type":1,
-  "volume":0.0,
+  "volume":1.0,
 }

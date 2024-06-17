@@ -39,6 +39,7 @@ if (pause == 1)
 		draw_set_color(c_white);
 		draw_set_font(fnt_pixelhud)
 		draw_set_halign(fa_center);
-		draw_text(640,256, "Press select again to go back to the pause menu");	
+		draw_text(640,256, "Press select again to go back to the pause menu");
+		draw_text(640,320, "Coming soon");	
 	}
 }

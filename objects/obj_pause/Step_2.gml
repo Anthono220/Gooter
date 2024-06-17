@@ -4,7 +4,7 @@ if (pause_screen == 0)
 	{
 		if (pause == 1)
 		{
-			audio_play_sound(snd_select_1,0,0,0.8);
+			audio_play_sound(snd_select_1,0,0,obj_settings.settings_vol_sfx);
 			pause_screen = 1;
 		}
 	}
@@ -14,11 +14,12 @@ if (pause_screen == 0)
 		if (pause == 0)
 		{
 			pause = 1;
-			audio_play_sound(snd_pause,0,0,0.8);
 			instance_deactivate_all(true);
+			instance_activate_object(obj_settings);
+			audio_play_sound(snd_pause,0,0,obj_settings.settings_vol_sfx);
 		} else {
 				pause = 0;
-				audio_play_sound(snd_pause_off,0,0,0.8);
+				audio_play_sound(snd_pause_off,0,0,obj_settings.settings_vol_sfx);
 				instance_activate_all();
 			}
 	}
@@ -35,7 +36,7 @@ if (pause_screen == 0)
 	{
 		if (pause == 1)
 		{
-			audio_play_sound(snd_select_1,0,0,0.8);
+			audio_play_sound(snd_select_1,0,0,obj_settings.settings_vol_sfx);
 			pause_screen = 0;
 		}
 	}

@@ -4,6 +4,12 @@ layer_sequence_create("Assets_2",(room_width/2),(room_height/2),seq_red_fadeout)
 button_highlighted = 0;
 
 splashnum = irandom_range(0,105);
+labeltext = "";
+if (menu_type == "settings")
+{
+	settings_get = obj_settings.settings_vol_music;
+}
+
 
 if (splashnum == 0) splashtxt = "Welcome to Gooter!"
 else if (splashnum == 1) splashtxt = "Open Source!"

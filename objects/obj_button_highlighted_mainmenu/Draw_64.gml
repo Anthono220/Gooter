@@ -12,14 +12,27 @@ draw_text(20, 580, string("Version 0.1.0 | (c) 2025 Anthono220 Media"));
 draw_text(20, 600, string("This is an open source game and comes with NO WARRANTY. See licenses.txt for license details."));
 
 // Splash text
-if splashnum == 21
-{
-	draw_set_colour(c_red);
-} else {
-	draw_set_colour(c_aqua);
-}
-
 draw_set_alpha(1);
 draw_set_halign(fa_center);
+if (menu_type = "menu")
+{
+	if (splashnum == 21)
+	{
+		draw_set_colour(c_red);
+	} else {
+		draw_set_colour(c_aqua);
+	}
 
-draw_text(640, 20, string(splashtxt));
+	
+
+	draw_text(640, 20, string(splashtxt));
+} else if (menu_type = "settings")
+{
+	draw_text(640, 20, "SETTINGS");
+	if (button_highlighted > 0)
+	{
+		draw_text(640, 64, string(labeltext) + " | " + string(settings_get));
+	} else {
+		draw_text(640, 64, string(labeltext) + " | Press A");
+	}
+}

@@ -6,7 +6,10 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_7680A115_1","path":"rooms/rm_settings/rm_settings.yy",},
+    {"name":"inst_39700739","path":"rooms/rm_settings/rm_settings.yy",},
+    {"name":"inst_214C2404","path":"rooms/rm_settings/rm_settings.yy",},
+    {"name":"inst_4EA8CECF","path":"rooms/rm_settings/rm_settings.yy",},
+    {"name":"inst_4BB94007","path":"rooms/rm_settings/rm_settings.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -14,7 +17,18 @@
         {"$GMRSequenceGraphic":"","%Name":"graphic_47C871B6","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_47C871B6","resourceType":"GMRSequenceGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"sequenceId":{"name":"seq_pink_fadeout","path":"sequences/seq_pink_fadeout/seq_pink_fadeout.yy",},"x":320.0,"y":160.0,},
       ],"depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets_2","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":"_filter_outline","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"","%Name":"inst_7680A115_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7680A115_1","objectId":{"name":"obj_button_highlighted_mainmenu","path":"objects/obj_button_highlighted_mainmenu/obj_button_highlighted_mainmenu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0072575,"x":0.0,"y":-0.49683994,},
+        {"$GMRInstance":"","%Name":"inst_39700739","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_39700739","objectId":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":32.0,"y":64.0,},
+        {"$GMRInstance":"","%Name":"inst_214C2404","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_214C2404","objectId":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},"propertyId":{"name":"settings_icon_number","path":"objects/obj_settings_button/obj_settings_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},"propertyId":{"name":"highlight_number","path":"objects/obj_settings_button/obj_settings_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":96.0,"y":64.0,},
+        {"$GMRInstance":"","%Name":"inst_4EA8CECF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4EA8CECF","objectId":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},"propertyId":{"name":"settings_icon_number","path":"objects/obj_settings_button/obj_settings_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},"propertyId":{"name":"highlight_number","path":"objects/obj_settings_button/obj_settings_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":160.0,"y":64.0,},
+        {"$GMRInstance":"","%Name":"inst_4BB94007","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4BB94007","objectId":{"name":"obj_button_highlighted_mainmenu","path":"objects/obj_button_highlighted_mainmenu/obj_button_highlighted_mainmenu.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_highlighted_mainmenu","path":"objects/obj_button_highlighted_mainmenu/obj_button_highlighted_mainmenu.yy",},"propertyId":{"name":"menu_type","path":"objects/obj_button_highlighted_mainmenu/obj_button_highlighted_mainmenu.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"settings",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":32.0,},
       ],"layers":[],"name":"Instances","properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FF000000",},
         {"name":"g_OutlineRadius","type":0,"value":"1",},
