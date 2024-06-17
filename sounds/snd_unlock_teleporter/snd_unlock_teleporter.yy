@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":6.92885,
+  "duration":4.02925,
   "name":"snd_unlock_teleporter",
   "parent":{
     "name":"Objects",

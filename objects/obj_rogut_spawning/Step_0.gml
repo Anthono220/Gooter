@@ -6,5 +6,5 @@ image_yscale += 0.01;
 if (image_xscale == 1)
 {
 	instance_change(obj_rogut_regular,true);
-	audio_play_sound(snd_spawn_rogut,0,0,0.8,0,1);
+	audio_play_sound(snd_spawn_rogut,0,0,obj_settings.settings_vol_sfx,0,1);
 }

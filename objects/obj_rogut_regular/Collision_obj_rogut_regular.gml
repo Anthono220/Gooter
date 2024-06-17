@@ -2,7 +2,7 @@ if(other.stateCower == 1)
 {
 	if (stateCower == 0)
 	{
-		audio_play_sound(snd_enemy_collision,0,0,0.8);
+		audio_play_sound(snd_enemy_collision,0,0,obj_settings.settings_vol_sfx);
 	}
 	stateCower = 1;
 	

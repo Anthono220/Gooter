@@ -3,12 +3,12 @@
 if (input_check_pressed("left")) 
 {
 	button_highlighted -= 1;
-	audio_play_sound(snd_select_move,0,0,0.8);
+	audio_play_sound(snd_select_move,0,0,obj_settings.settings_vol_sfx);
 }
 if (input_check_pressed("right")) 
 {
 	button_highlighted += 1;
-	audio_play_sound(snd_select_move,0,0,0.8);
+	audio_play_sound(snd_select_move,0,0,obj_settings.settings_vol_sfx);
 }
 
 if (button_highlighted < 0) button_highlighted = 0;

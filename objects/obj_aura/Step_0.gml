@@ -33,9 +33,9 @@ if(auraDASH > 99)
 	auraDASH = 99;
 }
 
-if(auraBLAST > 99)
+if(auraBLAST > 15)
 {
-	auraBLAST = 99;
+	auraBLAST = 15;
 }
 
 if(auraCHARGE > 99)

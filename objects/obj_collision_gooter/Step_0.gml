@@ -100,7 +100,7 @@ if (obj_gooter.countdown_mode == 0)
 				if (dash_dir != 1) 
 				{
 					dash_dir = 1;
-					audio_play_sound(snd_orbdash_release,0,0,0.8);
+					audio_play_sound(snd_orbdash_release,0,0,obj_settings.settings_vol_sfx);
 				}
 				//var _rollparsys = part_system_create(par_gooter_roll);
 				//part_system_position(_rollparsys, x, y);
@@ -115,7 +115,7 @@ if (obj_gooter.countdown_mode == 0)
 				if (dash_dir != 2) 
 				{
 					dash_dir = 2;
-					audio_play_sound(snd_orbdash_release,0,0,0.8);
+					audio_play_sound(snd_orbdash_release,0,0,obj_settings.settings_vol_sfx);
 				}
 				//var _rollparsys = part_system_create(par_gooter_roll);
 				//part_system_position(_rollparsys, x, y);
@@ -130,7 +130,7 @@ if (obj_gooter.countdown_mode == 0)
 				if (dash_dir != 3) 
 				{
 					dash_dir = 3;
-					audio_play_sound(snd_orbdash_release,0,0,0.8);
+					audio_play_sound(snd_orbdash_release,0,0,obj_settings.settings_vol_sfx);
 				}
 				//var _rollparsys = part_system_create(par_gooter_roll);
 				//part_system_position(_rollparsys, x, y);
@@ -146,7 +146,7 @@ if (obj_gooter.countdown_mode == 0)
 				if (dash_dir != 4) 
 				{
 					dash_dir = 4;
-					audio_play_sound(snd_orbdash_release,0,0,0.8);
+					audio_play_sound(snd_orbdash_release,0,0,obj_settings.settings_vol_sfx);
 				}
 				//var _rollparsys = part_system_create(par_gooter_roll);
 				//part_system_position(_rollparsys, x, y);

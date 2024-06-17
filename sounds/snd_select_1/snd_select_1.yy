@@ -12,8 +12,8 @@
   "duration":1.712,
   "name":"snd_select_1",
   "parent":{
-    "name":"Classic",
-    "path":"folders/Sounds/SFX/Classic.yy",
+    "name":"UI",
+    "path":"folders/Sounds/SFX/UI.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

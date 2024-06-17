@@ -113,7 +113,7 @@ if (countdown_mode == 0)
 	
 			if(stateRoll == 0)
 			{
-				audio_play_sound(snd_orbdash_charge,0,0,0.8);
+				audio_play_sound(snd_orbdash_charge,0,0,obj_settings.settings_vol_sfx);
 				stateRoll = 1;
 			}
 

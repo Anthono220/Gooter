@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.7827,
+  "duration":1.6782,
   "name":"snd_fury_activate",
   "parent":{
     "name":"Characters",

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.7827,
+  "duration":1.12965,
   "name":"snd_unlock_crate",
   "parent":{
     "name":"Objects",

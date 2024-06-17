@@ -3,7 +3,7 @@ if (hp > 0)
 {
 	var _psys = part_system_create(par_hit_rogut);
 	part_system_position(_psys, x, y);
-	audio_play_sound(snd_rogut_hit,0,0,0.8,0,(random_range(0.5,2)));
+	audio_play_sound(snd_rogut_hit,0,0,obj_settings.settings_vol_sfx,0,(random_range(0.5,2)));
 }
 
 

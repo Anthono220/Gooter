@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_select_move",
+  "%Name":"snd_pause",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.7827,
-  "name":"snd_select_move",
+  "duration":0.92065,
+  "name":"snd_pause",
   "parent":{
     "name":"UI",
     "path":"folders/Sounds/SFX/UI.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"snd_select_move.mp3",
+  "soundFile":"snd_pause.mp3",
   "type":1,
   "volume":1.0,
 }

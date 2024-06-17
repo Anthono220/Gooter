@@ -6,7 +6,7 @@ function scr_beginfun()
 	
 	if (!audio_is_playing(obj_collision_gooter.playmusic)) 
 	{
-		audio_play_sound(obj_collision_gooter.playmusic,0,1);
+		audio_play_sound(obj_collision_gooter.playmusic,0,1,obj_settings.settings_vol_music);
 	}
 }
 	

@@ -3,7 +3,7 @@
 if (obj_gooter.killscore >= kill_req && obj_gooter.killscore_miniboss >= kill_req_miniboss) 
 {
 	instance_change(crate_type, true);
-	audio_play_sound(snd_unlock_crate,0,0,0.8);
+	audio_play_sound(snd_unlock_crate,0,0,obj_settings.settings_vol_sfx);
 	
 	if (special_surprise != noone)
 	{
