@@ -16,10 +16,16 @@ if (pause_screen == 0)
 			pause = 1;
 			instance_deactivate_all(true);
 			instance_activate_object(obj_settings);
-			audio_play_sound(snd_pause,0,0,obj_settings.settings_vol_sfx);
+			if (os_browser == browser_not_a_browser)
+				{
+					audio_play_sound(snd_pause,0,0,obj_settings.settings_vol_sfx);
+				}
 		} else {
 				pause = 0;
-				audio_play_sound(snd_pause_off,0,0,obj_settings.settings_vol_sfx);
+				if (os_browser == browser_not_a_browser)
+				{
+					audio_play_sound(snd_pause_off,0,0,obj_settings.settings_vol_sfx);
+				}
 				instance_activate_all();
 			}
 	}

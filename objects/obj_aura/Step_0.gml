@@ -28,9 +28,9 @@ if(auraFURY < 0)
 	auraFURY = 0;
 }
 
-if(auraDASH > 99)
+if(auraDASH > 10)
 {
-	auraDASH = 99;
+	auraDASH = 10;
 }
 
 if(auraBLAST > 15)
@@ -38,22 +38,17 @@ if(auraBLAST > 15)
 	auraBLAST = 15;
 }
 
-if(auraCHARGE > 99)
+if(auraCHARGE > 30)
 {
-	auraCHARGE = 99;
+	auraCHARGE = 30;
 }
 
-if(auraFURY > 99)
+if(auraFURY > 30)
 {
-	auraFURY = 99;
+	auraFURY = 30;
 }
 
-if(auraHEART > 99)
+if(auraHEART > 10)
 {
-	auraHEART = 99;
-}
-
-if(auraFURY > 99)
-{
-	auraFURY = 99;
+	auraHEART = 10;
 }
