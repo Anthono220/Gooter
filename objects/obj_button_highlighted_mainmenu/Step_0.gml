@@ -30,6 +30,11 @@ if (menu_type = "settings")
 	{
 		labeltext = "sfx";
 		settings_get = obj_settings.settings_vol_sfx;
+	}
+	else if (button_highlighted = 3) // Vibrations
+	{
+		labeltext = "vibrations";
+		settings_get = obj_settings.settings_game_vib;
 	} 
 	
 }

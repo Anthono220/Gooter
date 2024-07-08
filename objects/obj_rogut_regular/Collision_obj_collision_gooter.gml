@@ -7,7 +7,7 @@ if (other.invin == 0)
 		var _hitsys = part_system_create(par_hit_rogut);
 		part_system_position(_hitsys, x, y);
 		audio_play_sound(snd_enemy_collision,0,0,obj_settings.settings_vol_sfx);
-		
+		vib_collision_rogut();
 		
 		obj_aura.auraHEART += -1;
 
@@ -19,7 +19,7 @@ if (other.invin == 0)
 		alarm_set(0, 60);
 
 
-		if(obj_aura.auraHEART <= 0)
+		if(obj_aura.auraHEART < 1)
 		{
 			instance_destroy(obj_rogut_regular);
 			audio_play_sound(snd_player_death,0,0,obj_settings.settings_vol_sfx);

@@ -59,12 +59,18 @@ draw_text(320, 600, string("") + string(obj_aura.auraFURY));
 // // HUD right side
 
 // Courage
-draw_sprite(spr_courage_counter_icon, 0, 1120, 600);
+draw_sprite(spr_courage_counter_icon, 0, 1088, 600);
 
 draw_set_colour(#B15AE8 & c_white);
 draw_set_halign(fa_center);
 
-draw_text(1120, 600, string("") + string(obj_gooter.courageReq));
+if (obj_gooter.courageReq > 0)
+{
+	draw_text(1088, 600, string("") + string(obj_gooter.courageReq) + string(" left"));
+} else {
+	draw_text(1088, 600, string("") + string("CLEAR!"));
+}
+
 
 // Killscore
 draw_sprite(spr_killscore_icon, 0, 1184, 600);

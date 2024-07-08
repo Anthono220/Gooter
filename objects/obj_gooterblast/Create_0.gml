@@ -9,6 +9,8 @@ if(obj_aura.auraBLAST > 0)
 	audio_play_sound(snd_gooter_blast,0,0,obj_settings.settings_vol_sfx);
 	sprite_index = spr_gooterblast;
 	image_index = 0;
+	
+	vib_shoot_blast();
 
 	speed = 15;
 

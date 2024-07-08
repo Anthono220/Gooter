@@ -1,4 +1,4 @@
-if(hp == 0)
+if(hp < 1)
 {
 	/// @description Execute Code
 	var _deathsys = part_system_create(par_explosion);

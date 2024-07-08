@@ -7,7 +7,7 @@ if (hp > 0)
 }
 
 
-if(hp == 0)
+if(hp < 1)
 {
 	/// @description Execute Code
 	obj_gooter.killscore += 1;

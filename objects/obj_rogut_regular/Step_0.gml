@@ -28,7 +28,7 @@ if(stateCower == 1)
 	image_alpha = 0.5;
 }
 
-if(hp <= 0)
+if(hp < 1)
 {
 	instance_destroy();
 }

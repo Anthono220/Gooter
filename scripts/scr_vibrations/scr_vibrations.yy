@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_vibrations",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_vibrations",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

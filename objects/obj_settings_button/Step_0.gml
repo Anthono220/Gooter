@@ -45,6 +45,19 @@ if (input_check_pressed("up"))
 			_settings_sound.save();
 			audio_play_sound(snd_select_move,0,0,obj_settings.settings_vol_sfx);
 		}
+		else if (image_index == 3) // Vibrations
+		{
+			var _settings_gameplay = ssave_get(fun_settings_gameplay);
+			if (obj_settings.settings_game_vib == true)
+			{
+				obj_settings.settings_game_vib = false
+			} else {
+				obj_settings.settings_game_vib = true
+			}
+			_settings_gameplay.set("vibrations", obj_settings.settings_game_vib);
+			_settings_gameplay.save();
+			audio_play_sound(snd_select_move,0,0,obj_settings.settings_vol_sfx);
+		}
 	
 	
 }
@@ -73,6 +86,19 @@ if (input_check_pressed("down"))
 			}
 			_settings_sound.set("volume_sfx", obj_settings.settings_vol_sfx);
 			_settings_sound.save();
+			audio_play_sound(snd_select_move,0,0,obj_settings.settings_vol_sfx);
+		}
+		else if (image_index == 3) // Vibrations
+		{
+			var _settings_gameplay = ssave_get(fun_settings_gameplay);
+			if (obj_settings.settings_game_vib == true)
+			{
+				obj_settings.settings_game_vib = false
+			} else {
+				obj_settings.settings_game_vib = true
+			}
+			_settings_gameplay.set("vibrations", obj_settings.settings_game_vib);
+			_settings_gameplay.save();
 			audio_play_sound(snd_select_move,0,0,obj_settings.settings_vol_sfx);
 		}
 	
