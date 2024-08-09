@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_seq_popup",
   "isCompatibility":false,
   "isDnD":false,
