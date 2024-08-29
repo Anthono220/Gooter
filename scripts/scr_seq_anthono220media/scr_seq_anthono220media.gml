@@ -9,5 +9,5 @@ function mom_nextroom()
 
 function mom_playsound_mus_anthono220media()
 {
-	audio_play_sound(mus_anthono220media,0,false,obj_settings.settings_vol_sfx);
+	audio_play_sound(mus_librefunmedia,0,false,obj_settings.settings_vol_sfx);
 }
