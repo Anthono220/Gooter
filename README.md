@@ -6,8 +6,7 @@
 
 **Follow Anthono220**: 
 - Twitter (Personal): https://twitter.com/Anthono220
-- Twitter (Media): https://twitter.com/Anthono220Media 
-- Twitter (Gooter News): https://twitter.com/GooterNews
+- Twitter (Gooter News): https://twitter.com/GooterGame
 - Newgrounds: https://anthono220.newgrounds.com/
 
 **Support Anthono220 on Ko-Fi**: https://ko-fi.com/anthono220
