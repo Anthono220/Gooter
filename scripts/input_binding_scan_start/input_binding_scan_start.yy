@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_binding_scan_start",
   "parent":{
-    "name":"Binding Creators",
-    "path":"folders/Extensions/Input/Binding Creators.yy",
+    "name":"07  Binding Scanner",
+    "path":"folders/Extensions/Input/07  Binding Scanner.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

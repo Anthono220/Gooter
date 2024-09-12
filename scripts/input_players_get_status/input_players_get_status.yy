@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_players_get_status",
   "parent":{
-    "name":"Players",
-    "path":"folders/Extensions/Input/Players.yy",
+    "name":"15  Players",
+    "path":"folders/Extensions/Input/15  Players.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

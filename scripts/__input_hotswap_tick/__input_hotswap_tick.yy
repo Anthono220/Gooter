@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__input_hotswap_tick",
   "parent":{
-    "name":"(System)",
-    "path":"folders/Extensions/Input/(System).yy",
+    "name":"Ticks",
+    "path":"folders/Extensions/Input/(System)/Ticks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

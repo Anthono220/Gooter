@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_verb_set",
   "parent":{
-    "name":"Verbs",
-    "path":"folders/Extensions/Input/Verbs.yy",
+    "name":"04  Further Verb Functions",
+    "path":"folders/Extensions/Input/04  Further Verb Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
