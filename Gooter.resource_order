@@ -320,6 +320,7 @@
     {"name":"snd_unlock_crate","order":1,"path":"sounds/snd_unlock_crate/snd_unlock_crate.yy",},
     {"name":"snd_unlock_teleporter","order":2,"path":"sounds/snd_unlock_teleporter/snd_unlock_teleporter.yy",},
     {"name":"scribble_fallback_bulletpoint","order":11,"path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},
+    {"name":"spr_anthono220_logo","order":7,"path":"sprites/spr_anthono220_logo/spr_anthono220_logo.yy",},
     {"name":"spr_aura_blast","order":5,"path":"sprites/spr_aura_blast/spr_aura_blast.yy",},
     {"name":"spr_aura_charge","order":9,"path":"sprites/spr_aura_charge/spr_aura_charge.yy",},
     {"name":"spr_aura_courage","order":11,"path":"sprites/spr_aura_courage/spr_aura_courage.yy",},

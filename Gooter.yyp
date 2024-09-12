@@ -717,6 +717,7 @@
     {"id":{"name":"snd_unlock_teleporter","path":"sounds/snd_unlock_teleporter/snd_unlock_teleporter.yy",},},
     {"id":{"name":"voi_excellent","path":"sounds/voi_excellent/voi_excellent.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
+    {"id":{"name":"spr_anthono220_logo","path":"sprites/spr_anthono220_logo/spr_anthono220_logo.yy",},},
     {"id":{"name":"spr_aura_blast","path":"sprites/spr_aura_blast/spr_aura_blast.yy",},},
     {"id":{"name":"spr_aura_charge","path":"sprites/spr_aura_charge/spr_aura_charge.yy",},},
     {"id":{"name":"spr_aura_courage","path":"sprites/spr_aura_courage/spr_aura_courage.yy",},},

@@ -6,17 +6,9 @@ draw_set_alpha(1);
 draw_set_halign(fa_right);
 if (menu_type = "menu")
 {
-	if (splashnum == 21)
-	{
-		draw_set_colour(#f2242b);
-	} else {
-		draw_set_colour(#2e90f2);
-	}
-
-	
-	draw_set_font(fnt_mainmenu);
-	draw_text(1260, 32, string(splashtxt));
-} else if (menu_type = "settings")
+	// put something here in the future, probably the name of the button being hovered over
+} 
+else if (menu_type = "settings")
 {
 	if (button_highlighted > 0)
 	{
