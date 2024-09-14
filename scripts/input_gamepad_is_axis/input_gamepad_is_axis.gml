@@ -1,20 +1,17 @@
-// Feather disable all
 /// @desc    Returns whether the given gp_* constant is mapped as an analogue input
 /// @param   gamepadIndex
-/// @param   {Constant.GamepadAxis|Constant.GamepadButton} GMconstant
+/// @param   GMconstant
 
 function input_gamepad_is_axis(_index, _gm)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
     if ((_index == undefined)
     ||  (_index < 0)
-    ||  (_index >= array_length(_global.__gamepads)))
+    ||  (_index >= array_length(global.__input_gamepads)))
     {
         return false;
     }
     
-    var _gamepad = _global.__gamepads[_index];
+    var _gamepad = global.__input_gamepads[_index];
     if (!is_struct(_gamepad)) return false;
-    return _gamepad.__is_axis(_gm);
+    return _gamepad.is_axis(_gm);
 }

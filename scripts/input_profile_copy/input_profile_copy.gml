@@ -1,5 +1,3 @@
-// Feather disable all
-
 /// @desc    Duplicates one player's profile and copies it to another player.
 /// @param   playerIndexSrc
 /// @param   profileNameSrc
@@ -8,7 +6,7 @@
 
 function input_profile_copy(_player_index_src, _profile_name_src, _player_index_dst, _profile_name_dst)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
+    __input_initialize();
     
     //Verify source player
     if (_player_index_src < 0)

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_cursor_speed_set",
   "parent":{
-    "name":"09  Cursor",
-    "path":"folders/Extensions/Input/09  Cursor.yy",
+    "name":"Cursor",
+    "path":"folders/Extensions/Input/Cursor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

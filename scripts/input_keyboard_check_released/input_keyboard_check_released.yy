@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_keyboard_check_released",
   "parent":{
-    "name":"26  Keyboard (Direct)",
-    "path":"folders/Extensions/Input/26  Keyboard (Direct).yy",
+    "name":"Keyboard (Direct)",
+    "path":"folders/Extensions/Input/Keyboard (Direct).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,13 +1,10 @@
-// Feather disable all
 /// @desc    Returns the activation threshold for a specific gamepad axis for a player
 ///          If no activation threshold has been set this function returns <undefined>
-/// @param   {Constant.GamepadAxis|Constant.GamepadButton} axis
+/// @param   axis
 /// @param   [playerIndex]
 
 function input_axis_threshold_get(_axis, _player_index = 0)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
     if (_player_index < 0)
     {
         __input_error("Invalid player index provided (", _player_index, ")");
@@ -20,5 +17,5 @@ function input_axis_threshold_get(_axis, _player_index = 0)
         return undefined;
     }
     
-    return _global.__players[_player_index].__axis_threshold_get(_axis);
+    return global.__input_players[_player_index].__axis_threshold_get(_axis);
 }

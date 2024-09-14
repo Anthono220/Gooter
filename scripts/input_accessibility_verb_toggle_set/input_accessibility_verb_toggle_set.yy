@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_accessibility_verb_toggle_set",
   "parent":{
-    "name":"12  Accessibility",
-    "path":"folders/Extensions/Input/12  Accessibility.yy",
+    "name":"Accessibility",
+    "path":"folders/Extensions/Input/Accessibility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

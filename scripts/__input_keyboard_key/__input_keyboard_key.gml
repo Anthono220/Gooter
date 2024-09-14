@@ -1,11 +1,8 @@
-// Feather disable all
 function __input_keyboard_key()
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
-    if (_global.__keyboard_allowed && keyboard_check(vk_anykey))
+    if (global.__input_keyboard_allowed && (keyboard_check(vk_anykey)))
     {        
-        switch(os_type)
+        switch (os_type)
         {
             //Android keyboard test
             case os_android:
@@ -30,24 +27,16 @@ function __input_keyboard_key()
                 if (keyboard_check(ord(keyboard_lastchar))) return ord(keyboard_lastchar);
                 
                 //Switch control
-                var _i = 0xFE;
-                repeat(0xF8)
+                var _i = 254;
+                repeat(248)
                 {
                     if (keyboard_check(_i)) return _i;
                     --_i;
                 }
-
                 return 0;
             break;
             
             default:
-
-                //Don't return "any" (key is out of range)
-                if (keyboard_key == 1) 
-                {
-                    return 0;
-                }
-
                 return keyboard_key;
             break;
         }

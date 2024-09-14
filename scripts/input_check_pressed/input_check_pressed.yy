@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_check_pressed",
   "parent":{
-    "name":"01  Checking Verbs",
-    "path":"folders/Extensions/Input/01  Checking Verbs.yy",
+    "name":"Checkers",
+    "path":"folders/Extensions/Input/Checkers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,4 +1,3 @@
-// Feather disable all
 function __input_string_contains()
 {
     var _i = 1;

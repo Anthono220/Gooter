@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_clear_momentary",
   "parent":{
-    "name":"23  Other",
-    "path":"folders/Extensions/Input/23  Other.yy",
+    "name":"Other",
+    "path":"folders/Extensions/Input/Other.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

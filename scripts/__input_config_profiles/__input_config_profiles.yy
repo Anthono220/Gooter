@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__input_config_profiles",
   "parent":{
-    "name":"00  Configuration - Please edit these scripts!",
-    "path":"folders/Extensions/Input/00  Configuration - Please edit these scripts!.yy",
+    "name":"Configuration - Please edit these scripts!",
+    "path":"folders/Extensions/Input/Configuration - Please edit these scripts!.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

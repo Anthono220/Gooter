@@ -1,9 +1,7 @@
-// Feather disable all
 /// @desc    Reads a JSON (string or struct) that contains Input system data and verifies if it can be imported without error
 /// @param   stringOrStruct
-/// @param   [returnError=false]
 
-function input_system_verify(_json, _return_error = false)
+function input_system_verify(_json)
 {
     //Make a clone of the current settings
     var _backup = input_system_export(false);
@@ -22,12 +20,5 @@ function input_system_verify(_json, _return_error = false)
     //Restore the clone of the current settings
     input_system_import(_backup);
     
-    if (_return_error)
-    {
-        return _error;
-    }
-    else
-    {
-        return (_error == undefined);
-    }
+    return (_error == undefined);
 }

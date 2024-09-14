@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_axis_threshold_set",
   "parent":{
-    "name":"12  Accessibility",
-    "path":"folders/Extensions/Input/12  Accessibility.yy",
+    "name":"Other",
+    "path":"folders/Extensions/Input/Other.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

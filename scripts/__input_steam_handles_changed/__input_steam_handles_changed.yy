@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__input_steam_handles_changed",
   "parent":{
-    "name":"Gamepads and Steam",
-    "path":"folders/Extensions/Input/(System)/Gamepads and Steam.yy",
+    "name":"(System)",
+    "path":"folders/Extensions/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_combo_get_phase_count",
   "parent":{
-    "name":"27  Combos",
-    "path":"folders/Extensions/Input/27  Combos.yy",
+    "name":"Extended Verbs",
+    "path":"folders/Extensions/Input/Extended Verbs.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

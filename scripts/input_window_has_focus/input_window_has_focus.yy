@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_window_has_focus",
   "parent":{
-    "name":"Deprecated",
-    "path":"folders/Extensions/Input/(System)/Deprecated.yy",
+    "name":"Other",
+    "path":"folders/Extensions/Input/Other.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

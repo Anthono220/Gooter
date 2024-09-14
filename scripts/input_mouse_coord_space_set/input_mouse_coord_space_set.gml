@@ -1,5 +1,3 @@
-// Feather disable all
-
 /// @desc    Sets the coordinate space for the mouse to operate in
 ///          The coordinate space should be a member of the INPUT_COORD_SPACE enum:
 ///              .ROOM      Room coordinates; should be the same as mouse_x and mouse_y. This is the default value
@@ -9,7 +7,7 @@
 
 function input_mouse_coord_space_set(_coord_space)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
+    __input_initialize();
     
-    _global.__pointer_coord_space = _coord_space;
+    global.__input_pointer_coord_space = _coord_space;
 }

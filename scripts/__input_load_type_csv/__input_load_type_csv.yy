@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__input_load_type_csv",
   "parent":{
-    "name":"Initialization",
-    "path":"folders/Extensions/Input/(System)/Initialization.yy",
+    "name":"(System)",
+    "path":"folders/Extensions/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

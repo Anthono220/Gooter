@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__input_multiplayer_assignment_tick",
   "parent":{
-    "name":"Ticks",
-    "path":"folders/Extensions/Input/(System)/Ticks.yy",
+    "name":"(System)",
+    "path":"folders/Extensions/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

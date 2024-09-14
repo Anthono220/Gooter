@@ -1,11 +1,10 @@
-// Feather disable all
 /// @desc    Returns the sign of the result of the negative and positive newly active verbs
 /// @param   verbNegative
 /// @param   verbPositive
 /// @param   [playerIndex=0]
-/// @param   [mostRecent]
+/// @param   [mostRecent=false]
 
-function input_check_opposing_pressed(_verb_negative, _verb_positive, _player_index = 0, _most_recent = INPUT_DEFAULT_OPPOSING_MOST_RECENT)
+function input_check_opposing_pressed(_verb_negative, _verb_positive, _player_index = 0, _most_recent = false)
 {
     var _pressed_n = input_check_pressed(_verb_negative, _player_index);
     var _pressed_p = input_check_pressed(_verb_positive, _player_index);

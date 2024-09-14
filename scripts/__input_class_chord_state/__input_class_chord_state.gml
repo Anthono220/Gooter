@@ -1,4 +1,3 @@
-// Feather disable all
 function __input_class_chord_state(_name, _chord_definition_struct) constructor
 {
     __name = _name;
@@ -21,7 +20,7 @@ function __input_class_chord_state(_name, _chord_definition_struct) constructor
                 var _i = 0;
                 repeat(_verb_count)
                 {
-                    if (_player_verb_struct[$ _verb_array[_i]].__held)
+                    if (_player_verb_struct[$ _verb_array[_i]].held)
                     {
                         __start_time = __input_get_time();
                         __state = 1;
@@ -47,7 +46,7 @@ function __input_class_chord_state(_name, _chord_definition_struct) constructor
                 var _i = 0;
                 repeat(_verb_count)
                 {
-                    if (!_player_verb_struct[$ _verb_array[_i]].__held) return false;
+                    if (!_player_verb_struct[$ _verb_array[_i]].held) return false;
                     ++_i;
                 }
                 
@@ -61,7 +60,7 @@ function __input_class_chord_state(_name, _chord_definition_struct) constructor
                 var _i = 0;
                 repeat(_verb_count)
                 {
-                    if (!_player_verb_struct[$ _verb_array[_i]].__held)
+                    if (!_player_verb_struct[$ _verb_array[_i]].held)
                     {
                         __state = 3;
                         return false;
@@ -79,7 +78,7 @@ function __input_class_chord_state(_name, _chord_definition_struct) constructor
                 var _i = 0;
                 repeat(_verb_count)
                 {
-                    if (_player_verb_struct[$ _verb_array[_i]].__held) return false;
+                    if (_player_verb_struct[$ _verb_array[_i]].held) return false;
                     ++_i;
                 }
                 

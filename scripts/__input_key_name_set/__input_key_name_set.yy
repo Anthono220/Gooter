@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__input_key_name_set",
   "parent":{
-    "name":"Keyboard and Mouse",
-    "path":"folders/Extensions/Input/(System)/Keyboard and Mouse.yy",
+    "name":"(System)",
+    "path":"folders/Extensions/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

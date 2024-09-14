@@ -1,13 +1,11 @@
-// Feather disable all
 /// @desc    Returns the analogue value that the verb is currently receiving
-///          If the verb has not received analogue input, this function will return either 0 or 1
+///          If the verb is not received analogue input, this function will return either 0 or 1
 ///          If an array of verbs is provided, this function will return the sum of all verb values
-/// @param   {any} verb/array
+/// @param   verb/array
 /// @param   [playerIndex=0]
 
 function input_value(_verb, _player_index = 0)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
     __INPUT_VERIFY_PLAYER_INDEX
     
     if (is_array(_verb))
@@ -28,5 +26,5 @@ function input_value(_verb, _player_index = 0)
     
     if (_verb_struct.__inactive) return false;
     
-    return _verb_struct.__value;
+    return _verb_struct.value;
 }

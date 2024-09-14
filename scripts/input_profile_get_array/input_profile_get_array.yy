@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_profile_get_array",
   "parent":{
-    "name":"16  Profiles",
-    "path":"folders/Extensions/Input/16  Profiles.yy",
+    "name":"Profiles",
+    "path":"folders/Extensions/Input/Profiles.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_trigger_effect_get_strength",
   "parent":{
-    "name":"22  Trigger Effects",
-    "path":"folders/Extensions/Input/22  Trigger Effects.yy",
+    "name":"Trigger Effects",
+    "path":"folders/Extensions/Input/Trigger Effects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

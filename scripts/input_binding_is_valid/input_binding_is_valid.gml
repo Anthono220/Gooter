@@ -1,4 +1,3 @@
-// Feather disable all
 /// @desc    Returns if the binding is valid for the player's currently assigned source(s)
 ///          For example, a gamepad binding would not be valid if a player is only using a keyboard
 /// @param   binding
@@ -6,7 +5,7 @@
 
 function input_binding_is_valid(_binding, _player_index = 0)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
+    __input_initialize();
     __INPUT_VERIFY_PLAYER_INDEX
     
     if (_binding == undefined)
@@ -23,7 +22,7 @@ function input_binding_is_valid(_binding, _player_index = 0)
         }
     }
     
-    with(_global.__players[_player_index])
+    with(global.__input_players[_player_index])
     {
         return __sources_validate_binding(_binding);
     }

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__input_player_apply_trigger_effects",
   "parent":{
-    "name":"Gamepads and Steam",
-    "path":"folders/Extensions/Input/(System)/Gamepads and Steam.yy",
+    "name":"(System)",
+    "path":"folders/Extensions/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

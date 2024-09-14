@@ -1,16 +1,17 @@
-// Feather disable all
 /// @desc    Returns the analogue value of the given input (after applying SDL axis remapping)
 /// @param   gamepadIndex
-/// @param   {Constant.GamepadAxis|Constant.GamepadButton} GMconstant
+/// @param   GMconstant
 
 function input_gamepad_value(_index, _gm)
 {
-    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
-    if (!_global.__game_input_allowed || !_global.__gamepad_allowed)
+    if ((_index == undefined)
+    ||  (_index < 0)
+    ||  (_index >= array_length(global.__input_gamepads)))
     {
         return 0.0;
     }
     
-    return __input_gamepad_value_internal(_index, _gm);
+    var _gamepad = global.__input_gamepads[_index];
+    if (!is_struct(_gamepad)) return false;
+    return _gamepad.get_value(_gm);
 }

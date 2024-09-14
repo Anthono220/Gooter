@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_motion_data_get",
   "parent":{
-    "name":"21  Gyro & Motion",
-    "path":"folders/Extensions/Input/21  Gyro & Motion.yy",
+    "name":"Gyro",
+    "path":"folders/Extensions/Input/Gyro.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

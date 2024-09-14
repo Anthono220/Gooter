@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_cursor_limit_get",
   "parent":{
-    "name":"10  Cursor Control",
-    "path":"folders/Extensions/Input/10  Cursor Control.yy",
+    "name":"Cursor",
+    "path":"folders/Extensions/Input/Cursor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
