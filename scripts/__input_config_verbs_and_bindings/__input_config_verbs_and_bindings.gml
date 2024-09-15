@@ -24,10 +24,18 @@ INPUT_DEFAULT_PROFILES = {
         action:  input_binding_key(vk_enter),
         roll: input_binding_key("R"),
 		shield: input_binding_key("E"),
+		
+		aim_up:    input_binding_key(vk_up),
+        aim_down:  input_binding_key(vk_down),
+        aim_left:  input_binding_key(vk_left),
+        aim_right: input_binding_key(vk_right),
         
         //No aiming verbs since we use the mouse for that (see below for aiming verb examples)
         
         pause: input_binding_key(vk_escape),
+		menu: input_binding_key(vk_tab),
+		select: input_binding_key(vk_enter),
+		back: input_binding_key(vk_shift),
     },
     
     gamepad:
@@ -40,19 +48,19 @@ INPUT_DEFAULT_PROFILES = {
         shoot: [input_binding_gamepad_button(gp_shoulderrb)],
 		charge: [input_binding_gamepad_button(gp_shoulderr)],
         blast: [input_binding_gamepad_button(gp_shoulderlb)],
+		action: [input_binding_gamepad_button(gp_face1)],
 		shield: [input_binding_gamepad_button(gp_shoulderl)],
 		roll:  [input_binding_gamepad_button(gp_face3)],
-		spiri_reset: input_binding_gamepad_button(gp_stickr),
         
         aim_up:    [input_binding_gamepad_axis(gp_axisrv, true)],
         aim_down:  [input_binding_gamepad_axis(gp_axisrv, false)],
         aim_left:  [input_binding_gamepad_axis(gp_axisrh, true)],
         aim_right: [input_binding_gamepad_axis(gp_axisrh, false)],
 		
-        pause: input_binding_gamepad_button(gp_start),
-		menu: input_binding_gamepad_button(gp_select),
-		select: input_binding_gamepad_button(gp_face1),
-		back: input_binding_gamepad_button(gp_face2),
+        pause: [input_binding_gamepad_button(gp_start)],
+		menu: [input_binding_gamepad_button(gp_select)],
+		select: [input_binding_gamepad_button(gp_face1)],
+		back: [input_binding_gamepad_button(gp_face2)],
     },
     
     touch:
@@ -61,13 +69,23 @@ INPUT_DEFAULT_PROFILES = {
         down:  input_binding_virtual_button(),
         left:  input_binding_virtual_button(),
         right: input_binding_virtual_button(),
-        
-        accept:  input_binding_virtual_button(),
-        cancel:  input_binding_virtual_button(),
-        action:  input_binding_virtual_button(),
-        special: input_binding_virtual_button(),
+		
+		shoot: input_binding_virtual_button(),
+		charge: input_binding_virtual_button(),
+        blast: input_binding_virtual_button(),
+		action: input_binding_virtual_button(),
+		shield: input_binding_virtual_button(),
+		roll:  input_binding_virtual_button(),
+		
+		aim_up:    input_binding_virtual_button(),
+        aim_down:  input_binding_virtual_button(),
+        aim_left:  input_binding_virtual_button(),
+        aim_right: input_binding_virtual_button(),
         
         pause: input_binding_virtual_button(),
+		menu: input_binding_virtual_button(),
+		select: input_binding_virtual_button(),
+		back: input_binding_virtual_button(),
     }
     
 };
