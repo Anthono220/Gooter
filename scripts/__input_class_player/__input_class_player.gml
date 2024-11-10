@@ -1,5 +1,8 @@
+// Feather disable all
 function __input_class_player() constructor
 {
+    __INPUT_GLOBAL_STATIC_VARIABLE  //Set static __global
+    
     __index = undefined;
     
     __source_array          = [];
@@ -23,10 +26,10 @@ function __input_class_player() constructor
     __color = undefined;
     
     __rebind_state            = 0;
-    __rebind_start_time       = global.__input_current_time;
+    __rebind_start_time       = __global.__current_time;
     __rebind_success_callback = undefined;
     __rebind_failure_callback = undefined;
-    __rebind_source_filter    = [];
+    __rebind_source_filter    = undefined;
     __rebind_ignore_struct    = undefined;
     __rebind_allow_struct     = undefined;
     
@@ -35,13 +38,18 @@ function __input_class_player() constructor
     __profiles_dict = {};
     __profile_name = undefined;
     
+    __active = true;
     __ghost = false;
+    __gamepad_type_override = undefined;
     
     __connected = false;
     __post_disconnection_tick = false;
     
     __cursor = new __input_class_cursor();
     __cursor.__player = self;
+    
+    __cursor_inverted = false;
+    __mouse_enabled   = true;
     
     __gyro_gamepad       = undefined;
     __gyro_axis_x        = INPUT_GYRO_DEFAULT_AXIS_X;
@@ -64,9 +72,9 @@ function __input_class_player() constructor
         
         var _new_profile_struct = {};
         var _v = 0;
-        repeat(array_length(global.__input_basic_verb_array))
+        repeat(array_length(__global.__basic_verb_array))
         {
-            var _verb_name = global.__input_basic_verb_array[_v];
+            var _verb_name = __global.__basic_verb_array[_v];
             
             var _alternate_array = array_create(INPUT_MAX_ALTERNATE_BINDINGS, undefined);
             var _a = 0;
@@ -85,7 +93,7 @@ function __input_class_player() constructor
     
     static __profile_destroy = function(_profile_name)
     {
-        if (variable_struct_exists(global.__input_default_profile_dict, _profile_name))
+        if (variable_struct_exists(__global.__default_profile_dict, _profile_name))
         {
             __input_error("Cannot remove profile \"", _profile_name, "\" as it is a default profile");
         }
@@ -141,7 +149,7 @@ function __input_class_player() constructor
     static __profile_get_auto = function()
     {
         if (__ghost) return undefined;
-        if ((global.__input_source_mode == INPUT_SOURCE_MODE.MULTIDEVICE) && (__index == 0)) return INPUT_AUTO_PROFILE_FOR_MULTIDEVICE;
+        if ((__global.__source_mode == INPUT_SOURCE_MODE.MULTIDEVICE) && (__index == 0)) return INPUT_AUTO_PROFILE_FOR_MULTIDEVICE;
         
         var _count = array_length(__source_array);
         
@@ -191,9 +199,9 @@ function __input_class_player() constructor
             
             //Also create bindings for every basic verb for this profile
             var _v = 0;
-            repeat(array_length(global.__input_basic_verb_array))
+            repeat(array_length(__global.__basic_verb_array))
             {
-                var _verb_name = global.__input_basic_verb_array[_v];
+                var _verb_name = __global.__basic_verb_array[_v];
                 __verb_ensure(_profile_name, _verb_name);
                 ++_v;
             }
@@ -203,9 +211,9 @@ function __input_class_player() constructor
     static __profile_reset_bindings = function(_profile_name)
     {
         var _v = 0;
-        repeat(array_length(global.__input_basic_verb_array))
+        repeat(array_length(__global.__basic_verb_array))
         {
-            var _verb_name = global.__input_basic_verb_array[_v];
+            var _verb_name = __global.__basic_verb_array[_v];
             
             var _alternate = 0;
             repeat(INPUT_MAX_ALTERNATE_BINDINGS)
@@ -229,9 +237,9 @@ function __input_class_player() constructor
         
         var _profile_struct = __profiles_dict[$ _profile_name];
         var _v = 0;
-        repeat(array_length(global.__input_basic_verb_array))
+        repeat(array_length(__global.__basic_verb_array))
         {
-            var _verb_name = global.__input_basic_verb_array[_v];
+            var _verb_name = __global.__basic_verb_array[_v];
             
             var _new_alternate_array = [];
             _output[$ _verb_name] = _new_alternate_array;
@@ -277,7 +285,7 @@ function __input_class_player() constructor
         
         if (!is_struct(_json) && !is_array(_json))
         {
-            __input_error("Input must be valid JSON (typeof=", _string, ")");
+            __input_error("Input must be valid JSON (typeof=", typeof(_string), ")");
             return;
         }
         
@@ -287,9 +295,9 @@ function __input_class_player() constructor
         
         //Iterate over every verb
         var _v = 0;
-        repeat(array_length(global.__input_basic_verb_array))
+        repeat(array_length(__global.__basic_verb_array))
         {
-            var _verb_name = global.__input_basic_verb_array[_v];
+            var _verb_name = __global.__basic_verb_array[_v];
             
             var _existing_alternate_array = _existing_verb_dict[$ _verb_name];
             
@@ -311,7 +319,17 @@ function __input_class_player() constructor
             
             //Verify that the input data has this verb
             var _alternate_array = _json[$ _verb_name];
-            if (!is_array(_alternate_array)) __input_error("Player ", __index, " data is missing verb \"", _verb_name, "\"");
+            if (!is_array(_alternate_array))
+            {
+                if (INPUT_FLEXIBLE_VERB_IMPORT)
+                {
+                    _alternate_array = _existing_alternate_array;
+                }
+                else
+                {
+                    __input_error("Player ", __index, " data is missing verb \"", _verb_name, "\"");
+                }
+            }
             
             if (!INPUT_FLEXIBLE_ALTERNATE_BINDING_IMPORT && (array_length(_alternate_array) != INPUT_MAX_ALTERNATE_BINDINGS))
             {
@@ -352,27 +370,17 @@ function __input_class_player() constructor
         }
         
         //Clear the touch input tracking variable if it's us!
-        if (global.__input_touch_player == self) __input_virtual_player_set(undefined);
+        if (__global.__touch_player == self) __input_virtual_player_set(undefined);
         
         array_resize(__source_array, 0);
-        __last_input_time = global.__input_current_time; //Set the last input time to delay hotswapping for a little while
+        __last_input_time = __global.__current_time; //Set the last input time to delay hotswapping for a little while
         
         if (__INPUT_DEBUG_SOURCES) __input_trace("Sources cleared for player ", __index);
     }
     
     /// @param source
     static __source_add = function(_source)
-    {
-        //Ensure we're targeting the right source for our platform / configuration
-        if (__INPUT_TOUCH_PRIMARY)
-        {
-            if (_source == INPUT_MOUSE) _source = INPUT_TOUCH;
-        }
-        else
-        {
-            if (_source == INPUT_TOUCH) _source = INPUT_MOUSE;
-        }
-        
+    {        
         //We don't use __source_contains() here because it'll report a false positive when assigning keyboard+mouse together
         var _i = 0;
         repeat(array_length(__source_array))
@@ -389,7 +397,7 @@ function __input_class_player() constructor
         if (__rebind_state > 0) __binding_scan_failure(INPUT_BINDING_SCAN_EVENT.SOURCE_CHANGED);
         
         array_push(__source_array, _source);
-        __last_input_time = global.__input_current_time; //Set the last input time to delay hotswapping for a little while
+        __last_input_time = __global.__current_time; //Set the last input time to delay hotswapping for a little while
         __color_set(__color);        
         __input_player_apply_trigger_effects(__index);
         
@@ -403,7 +411,7 @@ function __input_class_player() constructor
     static __source_remove = function(_source)
     {
         //Ensure we're targeting the right source for our platform / configuration
-        if (__INPUT_TOUCH_PRIMARY)
+        if (__global.__touch_allowed)
         {
             if (_source == INPUT_MOUSE) _source = INPUT_TOUCH;
         }
@@ -425,7 +433,7 @@ function __input_class_player() constructor
                 }
                  
                 //Clear the touch input tracking variable if it's us!
-                if (((_source == INPUT_TOUCH) || (INPUT_MOUSE_ALLOW_VIRTUAL_BUTTONS && (_source == INPUT_MOUSE))) && (global.__input_touch_player == self)) __input_virtual_player_set(undefined);
+                if (((_source == INPUT_TOUCH) || (INPUT_MOUSE_ALLOW_VIRTUAL_BUTTONS && (_source == INPUT_MOUSE))) && (__global.__touch_player == self)) __input_virtual_player_set(undefined);
                 
                 array_delete(__source_array, _i, 1);
                 if (__INPUT_DEBUG_SOURCES) __input_trace("Removed source ", _source, " from player ", __index);
@@ -439,20 +447,7 @@ function __input_class_player() constructor
     
     /// @param source
     static __source_contains = function(_source, _touch_remap = true)
-    {
-        //Ensure we're targeting the right source for our platform / configuration
-        if (_touch_remap)
-        {
-            if (__INPUT_TOUCH_PRIMARY)
-            {
-                if (_source == INPUT_MOUSE) _source = INPUT_TOUCH;
-            }
-            else
-            {
-                if (_source == INPUT_TOUCH) _source = INPUT_MOUSE;
-            }
-        }
-        
+    {        
         if (_source == INPUT_GAMEPAD)
         {
             //If we pass in the INPUT_GAMEPAD array then return <true> if any source is a gamepad
@@ -464,6 +459,19 @@ function __input_class_player() constructor
             }
             
             return false;
+        }        
+
+        //Ensure we're targeting the right source for our platform / configuration
+        if (_touch_remap)
+        {
+            if (__global.__touch_allowed)
+            {
+                if (_source == INPUT_MOUSE) _source = INPUT_TOUCH;
+            }
+            else
+            {
+                if (_source == INPUT_TOUCH) _source = INPUT_MOUSE;
+            }
         }
         
         var _i = 0;
@@ -489,12 +497,12 @@ function __input_class_player() constructor
         return -1;
     }
     
-    static __sources_any_input = function()
+    static __sources_any_rebind_allowed_input = function()
     {
         var _i = 0;
         repeat(array_length(__source_array))
         {
-            if (__source_array[_i].__scan_for_binding(__index, true, 0, undefined)) return true;
+            if (__source_array[_i].__scan_for_binding(__index, true, __rebind_ignore_struct, __rebind_allow_struct)) return true;
             ++_i;
         }
         
@@ -535,32 +543,121 @@ function __input_class_player() constructor
         {
             if (!_allowFallback) return _empty_binding;
             
-            if (INPUT_FALLBACK_PROFILE_BEHAVIOR == 1)
+            var _keyboard_profile_allowed = __global.__keyboard_allowed && __global.__any_keyboard_binding_defined;
+            var _mouse_profile_allowed    = __global.__mouse_allowed    && __global.__any_mouse_binding_defined;
+            var _gamepad_profile_allowed  = __global.__gamepad_allowed  && __global.__any_gamepad_binding_defined;
+            var _touch_profile_allowed    = __global.__touch_allowed;
+            
+            switch(INPUT_FALLBACK_PROFILE_BEHAVIOR)
             {
-                if (__INPUT_ON_DESKTOP && global.__input_keyboard_allowed && global.__input_any_keyboard_binding_defined)
-                {
-                    //Try to use a keyboard profile if possible
-                    _profile_name = INPUT_AUTO_PROFILE_FOR_KEYBOARD;
-                }
-                else if (global.__input_any_gamepad_binding_defined)
-                {
-                    //Try to use a gamepad profile if possible
-                    _profile_name = INPUT_AUTO_PROFILE_FOR_GAMEPAD;
-                }
-                else
-                {
-                    //Return a "static" empty binding since everything else failed
+                case 0:
                     return _empty_binding;
-                }
-            }
-            else if ((INPUT_FALLBACK_PROFILE_BEHAVIOR == 2) && global.__input_any_gamepad_binding_defined)
-            {
-                //Try to use a gamepad profile if possible
-                _profile_name = INPUT_AUTO_PROFILE_FOR_GAMEPAD;
-            }
-            else
-            {
-                return _empty_binding;
+                break;
+                
+                case 1:
+                    if (INPUT_ON_PC && (_keyboard_profile_allowed || _mouse_profile_allowed)
+                    && (!(INPUT_ON_STEAM_DECK && _gamepad_profile_allowed)))
+                    {
+                        if (INPUT_ASSIGN_KEYBOARD_AND_MOUSE_TOGETHER || _keyboard_profile_allowed)
+                        {
+                            //Try to use a keyboard profile if possible
+                            _profile_name = INPUT_AUTO_PROFILE_FOR_KEYBOARD;
+                        }
+                        else
+                        {
+                            //Try to use a mouse profile if possible
+                            _profile_name = INPUT_AUTO_PROFILE_FOR_MOUSE;
+                        }
+                    }
+                    else if (INPUT_ON_MOBILE && _touch_profile_allowed)
+                    {
+                        //Try to use a touch profile if possible
+                        _profile_name = INPUT_AUTO_PROFILE_FOR_TOUCH;                        
+                    }
+                    else if (_gamepad_profile_allowed)
+                    {
+                        //Fall back to a gamepad profile
+                        _profile_name = INPUT_AUTO_PROFILE_FOR_GAMEPAD;
+                    }
+                    else
+                    {
+                        //Return a "static" empty binding since everything else failed
+                        return _empty_binding;
+                    }
+                break;
+                
+                case 2:
+                    if (_gamepad_profile_allowed)
+                    {
+                        //Try to use a gamepad profile if possible
+                        _profile_name = INPUT_AUTO_PROFILE_FOR_GAMEPAD;
+                    }
+                    else
+                    {
+                        return _empty_binding;
+                    }
+                break;
+                
+                case 3:
+                    if (INPUT_ON_PC)
+                    {
+                        if (input_gamepad_is_any_connected() && _gamepad_profile_allowed)
+                        {
+                            //Try to use a gamepad profile if a gamepad has been connected
+                            _profile_name = INPUT_AUTO_PROFILE_FOR_GAMEPAD;
+                        }
+                        else if (_keyboard_profile_allowed || _mouse_profile_allowed)
+                        {
+                            if (INPUT_ASSIGN_KEYBOARD_AND_MOUSE_TOGETHER || _keyboard_profile_allowed)
+                            {
+                                //Fall back to a keyboard profile
+                                _profile_name = INPUT_AUTO_PROFILE_FOR_KEYBOARD;
+                            }
+                            else
+                            {
+                                //Fall back to a mouse profile
+                                _profile_name = INPUT_AUTO_PROFILE_FOR_MOUSE;
+                            }
+                        }
+                        else
+                        {
+                            //Return a "static" empty binding since everything else failed
+                            return _empty_binding;
+                        }
+                    }
+                    else if (INPUT_ON_MOBILE)
+                    {
+                        if (input_gamepad_is_any_connected() && _gamepad_profile_allowed)
+                        {
+                            //Try to use a gamepad profile if a gamepad has been connected
+                            _profile_name = INPUT_AUTO_PROFILE_FOR_GAMEPAD;
+                        }
+                        else if (_touch_profile_allowed)
+                        {
+                            //Fall back to a touch profile
+                            _profile_name = INPUT_AUTO_PROFILE_FOR_TOUCH;
+                        }
+                        else
+                        {
+                            //Return a "static" empty binding since everything else failed
+                            return _empty_binding;
+                        }
+                    }                       
+                    else if (_gamepad_profile_allowed)
+                    {
+                        //Try to use a gamepad profile if possible
+                        _profile_name = INPUT_AUTO_PROFILE_FOR_GAMEPAD;
+                    }
+                    else
+                    {
+                        //Return a "static" empty binding since everything else failed
+                        return _empty_binding;
+                    }
+                break;
+                
+                default:
+                    __input_error("Unhandled INPUT_FALLBACK_PROFILE_BEHAVIOR value (", INPUT_FALLBACK_PROFILE_BEHAVIOR, ")");
+                break;
             }
         }
         
@@ -594,7 +691,23 @@ function __input_class_player() constructor
                     if not ((_profile_name == INPUT_AUTO_PROFILE_FOR_KEYBOARD)
                          || (INPUT_ASSIGN_KEYBOARD_AND_MOUSE_TOGETHER && (_profile_name == INPUT_AUTO_PROFILE_FOR_MOUSE)))
                     {
-                        if (global.__input_strict_binding_check)
+                        //Identify incorrect gamepad-as-key binding
+                        var _binding_gamepad_name = input_gamepad_constant_get_name(ord(input_binding_get_name(_binding_struct)));
+                        if (_binding_gamepad_name != "unknown")
+                        {
+                            if (__global.__strict_binding_check)
+                            {
+                                __input_error("Gamepad constant value ", _binding_gamepad_name, " cannot be used as keyboard binding for verb ", _verb, " in profile ", _profile_name);
+                                return;
+                            }
+                            else
+                            {
+                                __input_trace("Warning! Gamepad constant value ", _binding_gamepad_name, " cannot be used as keyboard binding for verb ", _verb, " in profile ", _profile_name);
+                                return;
+                            }
+                        }
+                        
+                        if (__global.__strict_binding_check)
                         {
                             __input_error("Keyboard binding \"", input_binding_get_name(_binding_struct), "\" not supported for profile \"", _profile_name, "\"");
                         }
@@ -611,7 +724,7 @@ function __input_class_player() constructor
                     if not ((_profile_name == INPUT_AUTO_PROFILE_FOR_MOUSE)
                          || (INPUT_ASSIGN_KEYBOARD_AND_MOUSE_TOGETHER && (_profile_name == INPUT_AUTO_PROFILE_FOR_KEYBOARD)))
                     {
-                        if (global.__input_strict_binding_check)
+                        if (__global.__strict_binding_check)
                         {
                             __input_error("Mouse binding \"", input_binding_get_name(_binding_struct), "\" not supported for profile \"", _profile_name, "\"");
                         }
@@ -627,7 +740,7 @@ function __input_class_player() constructor
                 case __INPUT_SOURCE.TOUCH:
                     if not (_profile_name == INPUT_AUTO_PROFILE_FOR_TOUCH)
                     {
-                        if (global.__input_strict_binding_check)
+                        if (__global.__strict_binding_check)
                         {
                             __input_error("Touchscreen binding \"", input_binding_get_name(_binding_struct), "\" not supported for profile \"", _profile_name, "\"");
                         }
@@ -643,7 +756,7 @@ function __input_class_player() constructor
                 case __INPUT_SOURCE.GAMEPAD:
                     if not (_profile_name == INPUT_AUTO_PROFILE_FOR_GAMEPAD)
                     {
-                        if (global.__input_strict_binding_check)
+                        if (__global.__strict_binding_check)
                         {
                             __input_error("Gamepad binding \"", input_binding_get_name(_binding_struct), "\" not supported for profile \"", _profile_name, "\"");
                         }
@@ -659,7 +772,8 @@ function __input_class_player() constructor
         }
         
         __profiles_dict[$ _profile_name][$ _verb][@ _alternate] = _binding_struct;
-        __input_trace("Binding for profile \"", _profile_name, "\" verb \"", _verb, "\" alternate ", _alternate, " set to \"", input_binding_get_name(_binding_struct), "\"");
+        
+        if (!__INPUT_SILENT) __input_trace("Binding for profile \"", _profile_name, "\" verb \"", _verb, "\" alternate ", _alternate, " set to \"", input_binding_get_name(_binding_struct), "\"");
     }
     
     /// @param profileName
@@ -693,7 +807,7 @@ function __input_class_player() constructor
         }
         
         //Verify the profile
-        var _default_profile_struct = global.__input_default_player.__profiles_dict[$ _profile_name];
+        var _default_profile_struct = __global.__default_player.__profiles_dict[$ _profile_name];
         if (!is_struct(_default_profile_struct)) __input_error("Profile \"", _profile_name, "\" doesn't exist as a default profile");
         
         //Grab the equivalent binding from the default player
@@ -728,7 +842,7 @@ function __input_class_player() constructor
             __verb_group_state_dict[$ _verb_group] = _state;
             
             //Iterate over every verb for this group and get them to update their state
-            var _array = global.__input_group_to_verbs_dict[$ _verb_group];
+            var _array = __global.__group_to_verbs_dict[$ _verb_group];
             if (_state)
             {
                 //If the verb group is active then the verbs should be active too
@@ -748,7 +862,7 @@ function __input_class_player() constructor
                     with(__verb_state_dict[$ _array[_i]])
                     {
                         __group_inactive = true;
-                        previous_held    = true; //Force the held state on to avoid unwanted early reset of an inactive verb
+                        __previous_held  = true; //Force the held state on to avoid unwanted early reset of an inactive verb
                         __inactive       = true;
                         __toggle_state   = false; //Used for "toggle momentary" accessibility feature
                     }
@@ -762,9 +876,9 @@ function __input_class_player() constructor
         if (_state && _exclusive)
         {
             var _i = 0;
-            repeat(array_length(global.__input_verb_group_array))
+            repeat(array_length(__global.__verb_group_array))
             {
-                var _found_group = global.__input_verb_group_array[_i];
+                var _found_group = __global.__verb_group_array[_i];
                 if (_found_group != _verb_group) __verb_group_active(_found_group, false, false);
                 ++_i;
             }
@@ -794,8 +908,8 @@ function __input_class_player() constructor
             
             var _verb = new __input_class_verb_state();
             _verb.__player = self;
-            _verb.name     = _verb_name;
-            _verb.type     = __INPUT_VERB_TYPE.__BASIC;
+            _verb.__name     = _verb_name;
+            _verb.__type     = __INPUT_VERB_TYPE.__BASIC;
             
             __verb_state_dict[$ _verb_name] = _verb;
         }
@@ -817,53 +931,57 @@ function __input_class_player() constructor
     }
     
     /// @param verbName
-    static __add_chord = function(_verb_name)
+    /// @param type
+    static __add_complex_verb = function(_verb_name, _type)
     {
         //Set up a verb container on the player separate from the bindings
         if (is_struct(__verb_state_dict[$ _verb_name]))
         {
-            __input_error("Chord \"", _verb_name, "\" has already been added to player ", __index);
+            __input_error("Verb \"", _verb_name, "\" has already been added to player ", __index);
         }
         else
         {
-            if (__INPUT_DEBUG_VERBS) __input_trace("Verb \"", _verb_name, "\" not found on player ", __index, ", creating a new one as a chord");
+            if (__INPUT_DEBUG_VERBS) __input_trace("Verb \"", _verb_name, "\" not found on player ", __index, ", creating a new one as a complex verb (type=", _type, ")");
             
             var _verb_state_struct = new __input_class_verb_state();
             _verb_state_struct.__player = self;
-            _verb_state_struct.name     = _verb_name;
-            _verb_state_struct.type     = __INPUT_VERB_TYPE.__CHORD;
-            _verb_state_struct.analogue = false; //Chord verbs are never analogue
+            _verb_state_struct.__name     = _verb_name;
+            _verb_state_struct.__type     = _type;
+            _verb_state_struct.__analogue = false; //Complex verbs are never analogue
             __verb_state_dict[$ _verb_name] = _verb_state_struct;
-            
-            //We also need to store additional tracking information for combos
-            __chord_state_dict[$ _verb_name] = new __input_class_chord_state(_verb_name, global.__input_chord_verb_dict[$ _verb_name]);
         }
     }
     
     /// @param verbName
-    static __add_combo = function(_verb_name)
+    /// @param comboDefinition
+    static __add_combo_state = function(_verb_name, _combo_defintion)
     {
         //Set up a verb container on the player separate from the bindings
-        if (is_struct(__verb_state_dict[$ _verb_name]))
+        if (is_struct(__combo_state_dict[$ _verb_name]))
         {
-            __input_error("Combo \"", _verb_name, "\" has already been added to this player");
+            __input_error("Combo state with name \"", _verb_name, "\" has already been added to player ", __index);
         }
         else
         {
-            if (__INPUT_DEBUG_VERBS) __input_trace("Verb \"", _verb_name, "\" not found on player ", __index, ", creating a new one as a combo");
-            
-            var _verb_state_struct = new __input_class_verb_state();
-            _verb_state_struct.__player = self;
-            _verb_state_struct.name     = _verb_name;
-            _verb_state_struct.type     = __INPUT_VERB_TYPE.__COMBO;
-            _verb_state_struct.analogue = false; //Combo verbs are never analogue
-            __verb_state_dict[$ _verb_name] = _verb_state_struct;
-            
-            //We also need to store additional tracking information for combos
-            __combo_state_dict[$ _verb_name] = new __input_class_combo_state(_verb_name, global.__input_combo_verb_dict[$ _verb_name]);
+            __combo_state_dict[$ _verb_name] = new __input_class_combo_state(_verb_name, _combo_defintion);
         }
     }
-    
+
+    /// @param verbName
+    /// @param chordDefinition
+    static __add_chord_state = function(_verb_name, _chord_defintion)
+    {
+        //Set up a verb container on the player separate from the bindings
+        if (is_struct(__chord_state_dict[$ _verb_name]))
+        {
+            __input_error("Chord state with name \"", _verb_name, "\" has already been added to player ", __index);
+        }
+        else
+        {
+            __chord_state_dict[$ _verb_name] = new __input_class_chord_state(_verb_name, _chord_defintion);
+        }
+    }
+
     #endregion
     
     
@@ -880,8 +998,8 @@ function __input_class_player() constructor
             __axis_thresholds_dict[$ _axis_name] = _axis_struct;
         }
         
-        _axis_struct.mini = _min
-        _axis_struct.maxi = _max;
+        _axis_struct.__mini = _min
+        _axis_struct.__maxi = _max;
         
         if (__INPUT_DEBUG_BINDING) __input_trace("Axis threshold for axis \"", _axis_name, "\" set to ", _min, " -> ", _max);
         
@@ -913,8 +1031,8 @@ function __input_class_player() constructor
     {
         with(__verb_state_dict[$ _verb_name])
         {
-            force_value    = _value;
-            force_analogue = _analogue;
+            __force_value    = _value;
+            __force_analogue = _analogue;
         }
     }
     
@@ -946,7 +1064,7 @@ function __input_class_player() constructor
         
         if (_profile_name == undefined)
         {
-            __input_trace("Warning! Cannot get invaliid bindings, profile was <undefined>");
+            __input_trace("Warning! Cannot get invalid bindings, profile was <undefined>");
             return _output;
         }
         
@@ -956,12 +1074,12 @@ function __input_class_player() constructor
             var _profile_verb_struct = __profiles_dict[$ _profile_name];
             if (is_struct(_profile_verb_struct))
             {
-                var _gamepad_mapping_array = input_gamepad_get_map(gamepad);
+                var _gamepad_mapping_array = input_gamepad_get_map(__source_array[_s].__gamepad);
                 
                 var _v = 0;
-                repeat(array_length(global.__input_basic_verb_array))
+                repeat(array_length(__global.__basic_verb_array))
                 {
-                    var _verb_name = global.__input_basic_verb_array[_v];
+                    var _verb_name = __global.__basic_verb_array[_v];
                     
                     var _alternate_array = _profile_verb_struct[$ _verb_name];
                     var _a = 0;
@@ -969,7 +1087,7 @@ function __input_class_player() constructor
                     {
                         if (is_struct(_alternate_array[_a]))
                         {
-                            var _verb_input = _alternate_array[_a].value;
+                            var _verb_input = _alternate_array[_a].__value;
                             
                             var _found = false;
                             var _m = 0;
@@ -1007,11 +1125,13 @@ function __input_class_player() constructor
         var _new_gyro_params          = {};
     
         var _root_json = {
-            profiles:           _new_profiles_dict,
-            axis_thresholds:    _new_axis_thresholds_dict,
-            gyro:               _new_gyro_params,
-            vibration_strength: __vibration_strength,     
-            trigger_effect_strength: __trigger_effect_strength,       
+            __profiles:                _new_profiles_dict,
+            __axis_thresholds:         _new_axis_thresholds_dict,
+            __gyro:                    _new_gyro_params,
+            __gamepad_type_override:   __gamepad_type_override,
+            __vibration_strength:      __vibration_strength,     
+            __trigger_effect_strength: __trigger_effect_strength,
+            __cursor_inverted:         __cursor_inverted,
         };
         
         //Copy profiles
@@ -1033,18 +1153,18 @@ function __input_class_player() constructor
             var _thresholds_struct = __axis_thresholds_dict[$ _axis_name];
             
             _new_axis_thresholds_dict[$ _axis_name] = {
-                mini: _thresholds_struct.mini,
-                maxi: _thresholds_struct.maxi,
+                __mini: _thresholds_struct.__mini,
+                __maxi: _thresholds_struct.__maxi,
             };
             
             ++_a;
         }
         
         //Copy gyro parameters
-        _new_gyro_params.axis_x        = __gyro_axis_x;
-        _new_gyro_params.axis_y        = __gyro_axis_y;
-        _new_gyro_params.sensitivity_x = __gyro_sensitivity_x;
-        _new_gyro_params.sensitivity_y = __gyro_sensitivity_y;
+        _new_gyro_params.__axis_x        = __gyro_axis_x;
+        _new_gyro_params.__axis_y        = __gyro_axis_y;
+        _new_gyro_params.__sensitivity_x = __gyro_sensitivity_x;
+        _new_gyro_params.__sensitivity_y = __gyro_sensitivity_y;
         
         if (_output_string)
         {
@@ -1082,30 +1202,46 @@ function __input_class_player() constructor
         }
         
         //Iterate over every profile in the JSON
-        if (!is_struct(_json[$ "profiles"]))
+        if (!is_struct(_json[$ "__profiles"]))
         {
-            __input_error("Player ", __index, " profiles are corrupted");
-            return;
+            if (is_struct(_json[$ "profiles"]))
+            {
+                _json.__profiles = _json[$ "profiles"];
+            }
+            else
+            {
+                __input_error("Player ", __index, " profiles are corrupted");
+                return;
+            }
         }
         
-        var _profiles_dict = _json.profiles;
+        var _profiles_dict = _json.__profiles;
         var _profile_name_array = variable_struct_get_names(_profiles_dict);
         var _f = 0;
         repeat(array_length(_profile_name_array))
         {
             var _profile_name = _profile_name_array[_f];
-            __profile_import(_json.profiles[$ _profile_name], _profile_name);
+            __profile_import(_json.__profiles[$ _profile_name], _profile_name);
             ++_f;
         }
         
         //Copy axis threshold data
-        if (!is_struct(_json[$ "axis_thresholds"]))
+        var _legacy_thresholds = false;
+        if (!is_struct(_json[$ "__axis_thresholds"]))
         {
-            __input_error("Player ", __index, " gamepad axis thresholds are corrupted");
-            return;
+            if (is_struct(_json[$ "axis_thresholds"]))
+            {
+                _json.__axis_thresholds = _json[$ "axis_thresholds"];
+                _legacy_thresholds = true;
+            }
+            else
+            {            
+                __input_error("Player ", __index, " gamepad axis thresholds are corrupted");
+                return;
+            }
         }
         
-        var _axis_thresholds_dict = _json.axis_thresholds;
+        var _axis_thresholds_dict = _json.__axis_thresholds;
         var _axis_name_array = variable_struct_get_names(_axis_thresholds_dict);
         var _a = 0;
         repeat(array_length(_axis_name_array))
@@ -1119,10 +1255,20 @@ function __input_class_player() constructor
                 return;
             }
             
-            __axis_thresholds_dict[$ _axis_name] = {
-                mini: _new_thresholds_struct.mini,
-                maxi: _new_thresholds_struct.maxi,
-            };
+            if (_legacy_thresholds)
+            {
+                __axis_thresholds_dict[$ _axis_name] = {
+                    __mini: _new_thresholds_struct[$ "mini"],
+                    __maxi: _new_thresholds_struct[$ "maxi"],
+                }
+            }
+            else
+            {            
+                __axis_thresholds_dict[$ _axis_name] = {
+                    __mini: _new_thresholds_struct.__mini,
+                    __maxi: _new_thresholds_struct.__maxi,
+                }
+            }
             
             ++_a;
         }
@@ -1136,10 +1282,25 @@ function __input_class_player() constructor
                 return;
             }
             
-            __gyro_axis_x        = _json.gyro.axis_x;
-            __gyro_axis_y        = _json.gyro.axis_y;
-            __gyro_sensitivity_x = _json.gyro.sensitivity_x;
-            __gyro_sensitivity_y = _json.gyro.sensitivity_y;
+            _json.__gyro = _json.gyro; 
+            
+            __gyro_axis_x        = _json.__gyro[$ "axis_x"];
+            __gyro_axis_y        = _json.__gyro[$ "axis_y"];
+            __gyro_sensitivity_x = _json.__gyro[$ "sensitivity_x"];
+            __gyro_sensitivity_y = _json.__gyro[$ "sensitivity_y"];
+        }        
+        else if (variable_struct_exists(_json, "__gyro"))
+        {
+            if (!is_struct(_json.__gyro))
+            {
+                __input_error("Player ", __index, " gyro parameters are corrupted");
+                return;
+            }
+            
+            __gyro_axis_x        = _json.__gyro.__axis_x;
+            __gyro_axis_y        = _json.__gyro.__axis_y;
+            __gyro_sensitivity_x = _json.__gyro.__sensitivity_x;
+            __gyro_sensitivity_y = _json.__gyro.__sensitivity_y;
         }
         else
         {
@@ -1150,15 +1311,44 @@ function __input_class_player() constructor
             __gyro_sensitivity_y = INPUT_GYRO_DEFAULT_SENSITIVITY_Y;
         }
         
+        if (variable_struct_exists(_json, "gamepad_type_override"))
+        {
+            _json.__gamepad_type_override = _json[$ "gamepad_type_override"];
+        }
+        
+        if (variable_struct_exists(_json, "__gamepad_type_override"))
+        {
+            //Coalesce JSON null pointer as undefined
+            var _gamepad_type_override = _json.__gamepad_type_override ?? undefined;
+            
+            if (!is_string(_gamepad_type_override) && !is_undefined(_gamepad_type_override))
+            {
+                __input_error("Player ", __index, " gamepad type override is corrupted");
+                return;
+            }
+            
+            __gamepad_type_override = _gamepad_type_override;
+        }
+        else
+        {
+            __input_trace("Warning! Player ", __index, " gamepad type override not found, defaulting to <undefined>");
+            __gamepad_type_override = undefined;
+        }
+        
         if (variable_struct_exists(_json, "vibration_strength"))
         {
-            if (!is_numeric(_json.vibration_strength))
+            _json.__vibration_strength = _json[$ "vibration_strength"];
+        }
+        
+        if (variable_struct_exists(_json, "__vibration_strength"))
+        {
+            if (!is_numeric(_json.__vibration_strength))
             {
                 __input_error("Player ", __index, " vibration strength is corrupted");
                 return;
             }
             
-            __vibration_strength = _json.vibration_strength;
+            __vibration_strength = _json.__vibration_strength;
         }
         else
         {
@@ -1167,6 +1357,11 @@ function __input_class_player() constructor
         }
         
         if (variable_struct_exists(_json, "trigger_effect_strength"))
+        {
+            _json.__trigger_effect_strength = _json[$ "trigger_effect_strength"];
+        }
+        
+        if (variable_struct_exists(_json, "__trigger_effect_strength"))
         {
             if (!is_numeric(__trigger_effect_strength))
             {
@@ -1181,6 +1376,27 @@ function __input_class_player() constructor
             __input_trace("Warning! Player ", __index, " trigger effect strength not found, defaulting to ", INPUT_TRIGGER_EFFECT_DEFAULT_STRENGTH);
             __vibration_strength = INPUT_TRIGGER_EFFECT_DEFAULT_STRENGTH;
         }
+        
+        if (variable_struct_exists(_json, "cursor_inverted"))
+        {
+            _json.__cursor_inverted =  _json[$ "cursor_inverted"];
+        }
+        
+        if (variable_struct_exists(_json, "__cursor_inverted"))
+        {
+            if (!is_bool(__cursor_inverted))
+            {
+                __input_error("Player ", __index, " cursor inversion is corrupted");
+                return;
+            }
+            
+            __cursor_inverted = false;
+        }
+        else
+        {
+            __input_trace("Warning! Player ", __index, " cursor inversion not found, defaulting to <false>");
+            __cursor_inverted = false;
+        }
     }
     
     static __reset = function()
@@ -1191,7 +1407,7 @@ function __input_class_player() constructor
         {
             var _profile_name = _profile_name_array[_i];
         
-            if (!variable_struct_exists(global.__input_default_profile_dict, _profile_name))
+            if (!variable_struct_exists(__global.__default_profile_dict, _profile_name))
             {
                 //If this profile isn't a default, remove it
                 __profile_destroy(_profile_name);
@@ -1205,19 +1421,21 @@ function __input_class_player() constructor
             ++_i;
         }
         
-        __axis_thresholds_dict = {};
-        __vibration_strength   = INPUT_VIBRATION_DEFAULT_STRENGTH;
-        __gyro_axis_x          = INPUT_GYRO_DEFAULT_AXIS_X;
-        __gyro_axis_y          = INPUT_GYRO_DEFAULT_AXIS_Y;
-        __gyro_sensitivity_x   = INPUT_GYRO_DEFAULT_SENSITIVITY_X;
-        __gyro_sensitivity_y   = INPUT_GYRO_DEFAULT_SENSITIVITY_Y;
+        __axis_thresholds_dict  = {};
+        __gamepad_type_override = undefined;
+        __vibration_strength    = INPUT_VIBRATION_DEFAULT_STRENGTH;
+        __gyro_axis_x           = INPUT_GYRO_DEFAULT_AXIS_X;
+        __gyro_axis_y           = INPUT_GYRO_DEFAULT_AXIS_Y;
+        __gyro_sensitivity_x    = INPUT_GYRO_DEFAULT_SENSITIVITY_X;
+        __gyro_sensitivity_y    = INPUT_GYRO_DEFAULT_SENSITIVITY_Y;
+        __cursor_inverted       = false;
     }
     
     static __vibration_add_event = function(_event)
     {
         if (__vibration_paused && !_event.__force)
         {
-            __input_trace("Warning! New vibration event ignored, player ", __index, " vibration is paused")
+            if (!__INPUT_SILENT) __input_trace("Warning! New vibration event ignored, player ", __index, " vibration is paused")
         }
         else
         {
@@ -1232,11 +1450,12 @@ function __input_class_player() constructor
         
         if (__trigger_effect_paused)
         {
-            __input_trace("Warning! New trigger effect ignored, player ", __index, " trigger effect is paused");
+            if (!__INPUT_SILENT) __input_trace("Warning! New trigger effect ignored, player ", __index, " trigger effect is paused");
             return;
         }
 
-        var _intercepted = (global.__input_gamepads[_gamepad].__trigger_effect_apply(_trigger, _effect, __trigger_effect_strength) == false);
+        //Apply the effect and get the interception outcome
+        var _intercepted = (__global.__gamepads[_gamepad].__trigger_effect_apply(_trigger, _effect, __trigger_effect_strength) == false);
         
         if (!_set) return;
         if (_trigger == gp_shoulderlb)
@@ -1275,7 +1494,7 @@ function __input_class_player() constructor
     
     static __motion_data_get = function()
     {
-        if ((global.__input_source_mode == INPUT_SOURCE_MODE.MIXED) && (__gyro_gamepad == undefined))
+        if ((__global.__source_mode == INPUT_SOURCE_MODE.MIXED) && (__gyro_gamepad == undefined))
         {
             static __mixed_motion = {};
             with  (__mixed_motion)
@@ -1295,12 +1514,12 @@ function __input_class_player() constructor
         
             var _name    = 0;
             var _gamepad = 0;
-            repeat(array_length(global.__input_gamepads))
+            repeat(array_length(__global.__gamepads))
             {
-                if not (is_struct(global.__input_gamepads[_gamepad])) continue;
+                if not (is_struct(__global.__gamepads[_gamepad])) continue;
             
                 _using_motion  = true;
-                _source_motion = global.__input_gamepads[_gamepad].__motion.__tick();
+                _source_motion = __global.__gamepads[_gamepad].__motion.__tick();
         
                 _name = 0;
                 repeat(array_length(_motion_names))
@@ -1317,17 +1536,17 @@ function __input_class_player() constructor
         }
     
         var _gamepad_index = __gyro_gamepad;
-        if ((global.__input_source_mode != INPUT_SOURCE_MODE.MULTIDEVICE) || (__gyro_gamepad == undefined))
+        if ((__global.__source_mode != INPUT_SOURCE_MODE.MULTIDEVICE) || (__gyro_gamepad == undefined))
         {
             _gamepad_index = __source_get_gamepad();
         }
     
-        if ((_gamepad_index < 0) || !is_struct(global.__input_gamepads[_gamepad_index].__motion))
+        if ((_gamepad_index < 0) || !is_struct(__global.__gamepads[_gamepad_index].__motion))
         {
             return undefined;
         }
 
-        return global.__input_gamepads[_gamepad_index].__motion.__tick();
+        return __global.__gamepads[_gamepad_index].__motion.__tick();
     }
     
     static __gyro_enabled_set = function(_state)
@@ -1337,7 +1556,7 @@ function __input_class_player() constructor
             __gyro_screen_width  = display_get_width();
             __gyro_screen_height = display_get_height();
             
-            switch(global.__input_pointer_coord_space)
+            switch(__global.__pointer_coord_space)
             {
                 case INPUT_COORD_SPACE.ROOM:
                     var _view_active = false;
@@ -1369,7 +1588,7 @@ function __input_class_player() constructor
                 break;
 
                 case INPUT_COORD_SPACE.DEVICE:
-                    if (!__INPUT_ON_CONSOLE && (window_get_width != undefined))
+                    if (!INPUT_ON_CONSOLE && (window_get_width != undefined))
                     {
                         __gyro_screen_width  = window_get_width();
                         __gyro_screen_height = window_get_height();
@@ -1381,10 +1600,15 @@ function __input_class_player() constructor
         __gyro_enabled = _state;
     }
     
+    static __mouse_enabled_set = function(_state)
+    {
+        __mouse_enabled = _state;
+    }
+    
     
     #region Tick functions
     
-    static tick = function()
+    static __tick = function()
     {
         //Update our "connected" variable
         if (__ghost)
@@ -1419,24 +1643,21 @@ function __input_class_player() constructor
             
             //Clear the momentary state for all verbs
             var _v = 0;
-            repeat(array_length(global.__input_all_verb_array))
+            repeat(array_length(__global.__all_verb_array))
             {
-                __verb_state_dict[$ global.__input_all_verb_array[_v]].__clear();
+                __verb_state_dict[$ __global.__all_verb_array[_v]].__clear();
                 ++_v;
             }
             
-            __input_player_tick_sources();
+            __input_player_tick_sources(self);
             
             //Update our basic verbs first
-            tick_basic_verbs();
+            __tick_basic_verbs();
             
-            //Update our chords
+            //Update our chords and combos
             //We directly access verb values to detect state here
-            tick_chord_verbs();
-            
-            //Update our combos
-            //We directly access verb values to detect state here
-            tick_combo_verbs();
+            __tick_chord_verbs();
+            __tick_combo_verbs();
             
             __cursor.__tick();
             
@@ -1446,58 +1667,58 @@ function __input_class_player() constructor
         }
     }
     
-    static tick_basic_verbs = function()
+    static __tick_basic_verbs = function()
     {
         var _v = 0;
-        repeat(array_length(global.__input_basic_verb_array))
+        repeat(array_length(__global.__basic_verb_array))
         {
-            __verb_state_dict[$ global.__input_basic_verb_array[_v]].tick(__verb_group_state_dict);
+            __verb_state_dict[$ __global.__basic_verb_array[_v]].__tick(__verb_group_state_dict, __active);
             ++_v;
         }
     }
     
-    static tick_chord_verbs = function()
+    static __tick_chord_verbs = function()
     {
         var _i = 0;
-        repeat(array_length(global.__input_chord_verb_array))
+        repeat(array_length(__global.__chord_verb_array))
         {
-            var _chord_name = global.__input_chord_verb_array[_i];
+            var _chord_name = __global.__chord_verb_array[_i];
             if (__chord_state_dict[$ _chord_name].__evaluate(__verb_state_dict))
             {
                 with(__verb_state_dict[$ _chord_name])
                 {
-                    value = 1;
-                    raw   = 1;
-                    tick();
+                    __value = 1;
+                    __raw   = 1;
+                    __tick(other.__verb_group_state_dict, other.__active);
                 }
             }
             else
             {
-                __verb_state_dict[$ _chord_name].tick();
+                __verb_state_dict[$ _chord_name].__tick(__verb_group_state_dict, __active);
             }
             
             ++_i;
         }
     }
     
-    static tick_combo_verbs = function()
+    static __tick_combo_verbs = function()
     {
         var _i = 0;
-        repeat(array_length(global.__input_combo_verb_array))
+        repeat(array_length(__global.__combo_verb_array))
         {
-            var _combo_name = global.__input_combo_verb_array[_i];
-            if (__combo_state_dict[$ _combo_name].__tick(__verb_state_dict) == __INPUT_COMBO_STATE.__SUCCESS)
+            var _combo_name = __global.__combo_verb_array[_i];
+            if (__combo_state_dict[$ _combo_name].__evaluate(__verb_state_dict))
             {
                 with(__verb_state_dict[$ _combo_name])
                 {
-                    value = 1;
-                    raw   = 1;
-                    tick();
+                    __value = 1;
+                    __raw   = 1;
+                    __tick(other.__verb_group_state_dict, other.__active);
                 }
             }
             else
             {
-                __verb_state_dict[$ _combo_name].tick();
+                __verb_state_dict[$ _combo_name].__tick(__verb_group_state_dict, __active);
             }
             
             ++_i;
@@ -1506,7 +1727,7 @@ function __input_class_player() constructor
     
     static __tick_vibration = function()
     {
-        if (__connected && (global.__input_source_mode != INPUT_SOURCE_MODE.MIXED) && (global.__input_source_mode != INPUT_SOURCE_MODE.MULTIDEVICE)) //Don't vibrate if we're likely to have multiple gamepads assigned
+        if (__connected && (__global.__source_mode != INPUT_SOURCE_MODE.MIXED) && (__global.__source_mode != INPUT_SOURCE_MODE.MULTIDEVICE)) //Don't vibrate if we're likely to have multiple gamepads assigned
         {
             var _gamepad_index = __source_get_gamepad();
             if (_gamepad_index < 0) return;
@@ -1544,7 +1765,7 @@ function __input_class_player() constructor
                 }
             }
             
-            global.__input_gamepads[_gamepad_index].__vibration_set(__vibration_strength*_left, __vibration_strength*_right);
+            __global.__gamepads[_gamepad_index].__vibration_set(__vibration_strength*_left, __vibration_strength*_right);
         }
     }
     
@@ -1555,7 +1776,7 @@ function __input_class_player() constructor
         {
             if (__source_array[_i].__source == __INPUT_SOURCE.GAMEPAD)
             {
-                with global.__input_gamepads[__source_array[_i].__gamepad] __color_set(_color);
+                with __global.__gamepads[__source_array[_i].__gamepad] __color_set(_color);
             }   
             
             ++_i;
@@ -1575,6 +1796,8 @@ function __input_class_player() constructor
         //    return ;
         //}
         
+        var _source_filter = __rebind_source_filter ?? __source_array;
+        
         if (__source_contains(INPUT_TOUCH, false))
         {
             __input_trace("Binding scan failed: Player ", __index, " is using INPUT_TOUCH which cannot be rebound");
@@ -1582,10 +1805,17 @@ function __input_class_player() constructor
             return;
         }
         
-        if (array_length(__rebind_source_filter) <= 0)
+        if (array_length(__source_array) <= 0)
         {
             __input_trace("Binding scan failed: Source array for player ", __index, " is empty (the player has no source assigned)");
             __binding_scan_failure(INPUT_BINDING_SCAN_EVENT.SOURCE_INVALID);
+            return;
+        }
+        
+        if (array_length(_source_filter) <= 0)
+        {
+            __input_trace("Binding scan failed: Source filter array for player ", __index, " is empty (no sources are permitted)");
+            __binding_scan_failure(INPUT_BINDING_SCAN_EVENT.SOURCE_FILTER_EMPTY);
             return;
         }
         
@@ -1596,6 +1826,13 @@ function __input_class_player() constructor
             return;
         }
         
+        if (!__active)
+        {
+            __input_trace("Binding scan failed: Player ", __index, " is inactive");
+            __binding_scan_failure(INPUT_BINDING_SCAN_EVENT.PLAYER_IS_INACTIVE);
+            return;
+        }
+        
         if (!__connected)
         {
             __input_trace("Binding scan failed: Player ", __index, " disconnected");
@@ -1603,7 +1840,7 @@ function __input_class_player() constructor
             return;
         }
         
-        if (global.__input_current_time - __rebind_start_time > INPUT_BINDING_SCAN_TIMEOUT)
+        if (__global.__current_time - __rebind_start_time > INPUT_BINDING_SCAN_TIMEOUT)
         {
             __input_trace("Binding scan failed: Timed out");
             __binding_scan_failure(INPUT_BINDING_SCAN_EVENT.SCAN_TIMEOUT);
@@ -1614,7 +1851,7 @@ function __input_class_player() constructor
         
         if (__rebind_state == 1) //Waiting for the player to release all buttons
         {
-            if (!__sources_any_input())
+            if (!__sources_any_rebind_allowed_input())
             {
                 __input_trace("Now scanning for a new binding from player ", __index);
                 __rebind_state = 2;
@@ -1626,28 +1863,28 @@ function __input_class_player() constructor
             var _binding_source = undefined;
                 
             var _i = 0;
-            repeat(array_length(__rebind_source_filter))
+            repeat(array_length(_source_filter))
             {
-                if (global.__input_use_is_instanceof)
+                if (__global.__use_is_instanceof)
                 {
-                    if (!is_instanceof(__rebind_source_filter[_i], __input_class_source))
+                    if (!is_instanceof(_source_filter[_i], __input_class_source))
                     {
-                        __input_error("Value in filter array is not a source (index ", _i, ", ", __rebind_source_filter[_i], ")");
+                        __input_error("Value in filter array is not a source (index ", _i, ", ", _source_filter[_i], ")");
                     }
                 }
                 else
                 {
-                    if (instanceof(__rebind_source_filter[_i]) != "__input_class_source")
+                    if (instanceof(_source_filter[_i]) != "__input_class_source")
                     {
-                        __input_error("Value in filter array is not a source (index ", _i, ", ", __rebind_source_filter[_i], ")");
+                        __input_error("Value in filter array is not a source (index ", _i, ", ", _source_filter[_i], ")");
                     }
                 }
                 
-                var _source_binding = __rebind_source_filter[_i].__scan_for_binding(__index, false, __rebind_ignore_struct, __rebind_allow_struct);
+                var _source_binding = _source_filter[_i].__scan_for_binding(__index, false, __rebind_ignore_struct, __rebind_allow_struct);
                 if (_source_binding != undefined)
                 {
                     var _new_binding    = _source_binding;
-                    var _binding_source = __rebind_source_filter[_i];
+                    var _binding_source = _source_filter[_i];
                 }
                     
                 ++_i;

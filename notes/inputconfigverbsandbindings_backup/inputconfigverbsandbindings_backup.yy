@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"inputconfigverbsandbindings_backup",
+  "name":"inputconfigverbsandbindings_backup",
+  "parent":{
+    "name":"Gooter",
+    "path":"Gooter.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

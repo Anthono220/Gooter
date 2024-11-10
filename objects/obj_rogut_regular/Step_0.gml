@@ -6,14 +6,25 @@ if(stateCower == 0)
 {
 	if (hp < 5)
 	{
-	sprite_index = spr_rogut_dying;
-	speed = 4;
+	   sprite_index = spr_rogut_dying;
+	   if (obj_pause.pause != 1)
+        {
+            speed = 4; 
+        } else {
+            speed = 0;
+        }
 	}
 	
 	if (hp > 5)
 	{
-	sprite_index = spr_rogut_regular;
-	speed = 5;
+	   sprite_index = spr_rogut_regular;
+        if (obj_pause.pause != 1)
+        {
+            speed = 5;
+        } else {
+            speed = 0;
+        }
+	
 	}
 	
 
@@ -23,8 +34,12 @@ if(stateCower == 0)
 if(stateCower == 1)
 {
 	sprite_index = spr_rogut_hiding;
-	speed = -5;
-
+    if (obj_pause.pause != 1)
+    {
+        speed = -5;
+    } else {
+        speed = 0;
+    }
 	image_alpha = 0.5;
 }
 

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"input_accessibility_global_toggle_set",
   "parent":{
-    "name":"Accessibility",
-    "path":"folders/Extensions/Input/Accessibility.yy",
+    "name":"12  Accessibility",
+    "path":"folders/Extensions/Input/12  Accessibility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

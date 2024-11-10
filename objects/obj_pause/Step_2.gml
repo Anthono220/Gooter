@@ -14,8 +14,22 @@ if (pause_screen == 0)
 		if (pause == 0)
 		{
 			pause = 1;
-			instance_deactivate_all(true);
-			instance_activate_object(obj_settings);
+            
+            // Deactivate objects
+			//instance_deactivate_object(obj_gooter);
+            //instance_deactivate_object(obj_collision_gooter);
+            instance_deactivate_object(obj_hud);
+            //instance_deactivate_object(obj_spawner);
+            //instance_deactivate_object(obj_rogut_regular);
+            //instance_deactivate_object(obj_rogut_spawning);
+            instance_deactivate_object(obj_soober);
+            instance_deactivate_object(obj_soober_roar_thing);
+            instance_deactivate_object(obj_crate_missing);
+            instance_deactivate_object(obj_crate_wooden);
+            instance_deactivate_object(obj_teleporter_active);
+            instance_deactivate_object(obj_teleporter_arrow);
+            instance_deactivate_object(obj_teleporter_inactive);
+            
 			if (os_browser == browser_not_a_browser)
 				{
 					audio_play_sound(snd_pause,0,0,obj_settings.settings_vol_sfx);
