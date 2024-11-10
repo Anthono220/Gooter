@@ -38,8 +38,6 @@ Read CONTRIBUTING.md for details on directly contributing to the project.
 
 If you wish to support the game's development, ensure that I can make open source games in the future, and/or simply wanna say thank you, here's the link to my Ko-Fi again: https://ko-fi.com/anthono220
 
-**It is recommended that you use the lastest version of Game Maker (not a beta) before messing with the source code for any reason.**
-
 
 
 
