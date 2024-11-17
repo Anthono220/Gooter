@@ -14,11 +14,12 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"67e3a0fa-b371-4504-9242-486dca34e034","name":"67e3a0fa-b371-4504-9242-486dca34e034","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":8,
-  "gridY":8,
+  "gridX":16,
+  "gridY":16,
   "height":112,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"4d8bd3e4-f9cb-4a21-9e0d-840a2bfd4b3f","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"4d8bd3e4-f9cb-4a21-9e0d-840a2bfd4b3f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"64e88224-de6c-48f8-ae24-dc5fe7a0e760","blendMode":0,"displayName":"default","isLocked":false,"name":"64e88224-de6c-48f8-ae24-dc5fe7a0e760","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_tileset_w1",
