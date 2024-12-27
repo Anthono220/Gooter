@@ -22,7 +22,7 @@ And some others I probably missed
 
 - Software Used -
 GameMaker - Game Engine
-LMMS - Music
+FL Studio - Music
 sfxr (LMMS) - SFX
 Libresprite - Sprites
 
