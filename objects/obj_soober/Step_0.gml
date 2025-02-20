@@ -2,9 +2,9 @@
 // You can write your code in this editor
 if (angerstate == 1) 
 {
-	if (sprite_index != spr_soober_roar)
+	if (sprite_index != spr_soober_bite)
 	{
-		sprite_index = spr_soober_roar;
+		sprite_index = spr_soober_bite;
 		alarm_set(0, 60)
 	}
 }

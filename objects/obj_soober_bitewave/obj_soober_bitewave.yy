@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_soober_roar_thing",
+  "%Name":"obj_soober_bitewave",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_collision_gooter","path":"objects/obj_collision_gooter/obj_collision_gooter.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_soober_roar_thing",
+  "name":"obj_soober_bitewave",
   "overriddenProperties":[],
   "parent":{
     "name":"Soobers",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_soober_roar_thing",
-    "path":"sprites/spr_soober_roar_thing/spr_soober_roar_thing.yy",
+    "name":"spr_soober_bitewave",
+    "path":"sprites/spr_soober_bitewave/spr_soober_bitewave.yy",
   },
   "spriteMaskId":null,
   "visible":true,

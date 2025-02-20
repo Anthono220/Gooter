@@ -23,7 +23,7 @@ if (pause_screen == 0)
             //instance_deactivate_object(obj_rogut_regular);
             //instance_deactivate_object(obj_rogut_spawning);
             instance_deactivate_object(obj_soober);
-            instance_deactivate_object(obj_soober_roar_thing);
+            instance_deactivate_object(obj_soober_bitewave);
             instance_deactivate_object(obj_crate_missing);
             instance_deactivate_object(obj_crate_wooden);
             instance_deactivate_object(obj_teleporter_active);
