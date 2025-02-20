@@ -14,3 +14,13 @@ function seq_settings_Moment()
 {
 	room_goto(rm_settings);
 }
+
+function seq_shop_Moment()
+{
+	room_goto(rm_shop);
+}
+
+function seq_extras_Moment()
+{
+	room_goto(rm_extras);
+}

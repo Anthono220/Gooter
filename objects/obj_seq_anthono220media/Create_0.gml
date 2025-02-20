@@ -1,1 +1,0 @@
-variable = layer_sequence_create("Sequence", 320, 160, seq_anthono220media);

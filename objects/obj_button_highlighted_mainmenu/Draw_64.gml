@@ -13,11 +13,22 @@ else if (menu_type = "settings")
 	if (button_highlighted > 0)
 	{
 		draw_set_font(fnt_mainmenu);
-		draw_set_colour(c_black);
+		if (room == rm_shop)
+		{
+			draw_set_colour(c_white);
+		} else {
+			draw_set_colour(c_black);
+		}
+		
 		draw_text(1260, 32, string(labeltext) + " | " + string(settings_get));
 	} else {
 		draw_set_font(fnt_mainmenu);
-		draw_set_colour(c_black);
+		if (room == rm_shop)
+		{
+			draw_set_colour(c_white);
+		} else {
+			draw_set_colour(c_black);
+		}
 		draw_text(1260, 32, string(labeltext) + " | Press A");
 	}
 }

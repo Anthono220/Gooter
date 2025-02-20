@@ -19,7 +19,7 @@ if (pause == 1)
 		draw_set_font(fnt_pixelhud)
 		draw_set_halign(fa_center);
 		draw_text(640,256, "Press X for quick settings");
-		draw_text(640,320, "Press B to go back to main menu");
+		draw_text(640,320, "Press B to go back to title screen");
 		draw_text(640,384, "Press select again to go back to the game");
 	} else if (pause_screen == 1)
 	{

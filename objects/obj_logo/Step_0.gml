@@ -1,6 +1,6 @@
 if(input_check_pressed("select"))
 {
-	layer_sequence_create("Assets_2",(room_width/2),(room_height/2),seq_red_popup);
+	layer_sequence_create("Assets_2",(room_width/2),(room_height/2),seq_main_popup);
 	audio_play_sound(snd_select_1,0,0,obj_settings.settings_vol_sfx);
 }
 
