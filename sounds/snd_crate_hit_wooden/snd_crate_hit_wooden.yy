@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_crate_hit_wooden",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":320,
+  "channelFormat":1,
   "compression":0,
+  "compressionQuality":9,
   "conversionMode":0,
   "duration":0.845,
+  "exportDir":"",
   "name":"snd_crate_hit_wooden",
   "parent":{
     "name":"Classic",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":48000,
   "soundFile":"snd_crate_hit_wooden.wav",
-  "type":1,
   "volume":1.0,
 }

@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_yellow_fadeout",
   "autoRecord":true,
   "backdropHeight":768,
@@ -34,6 +34,8 @@
   "playbackSpeedType":0,
   "resourceType":"GMSequence",
   "resourceVersion":"2.0",
+  "seqHeight":1600.0,
+  "seqWidth":1600.0,
   "showBackdrop":true,
   "showBackdropImage":false,
   "spriteId":null,

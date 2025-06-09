@@ -1,8 +1,8 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Gooter",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -97,6 +97,7 @@
     {"$GMFolder":"","%Name":"Main Menu","folderPath":"folders/UI/Main Menu.yy","name":"Main Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Settings Menu","folderPath":"folders/UI/Settings Menu.yy","name":"Settings Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"controllerblacklist.csv","CopyToMask":-1,"filePath":"datafiles","name":"controllerblacklist.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"controllertypes.csv","CopyToMask":-1,"filePath":"datafiles","name":"controllertypes.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -111,7 +112,7 @@
     {"name":"GM_hit_rogut","path":"particlelib/GM_hit_rogut/GM_hit_rogut.yy",},
   ],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.1400.0.815",
   },
   "name":"Gooter",
   "resources":[

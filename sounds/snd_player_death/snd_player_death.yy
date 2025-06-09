@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_player_death",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":320,
+  "channelFormat":1,
   "compression":0,
+  "compressionQuality":9,
   "conversionMode":0,
   "duration":2.4,
+  "exportDir":"",
   "name":"snd_player_death",
   "parent":{
     "name":"Classic",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":48000,
   "soundFile":"snd_player_death.wav",
-  "type":1,
   "volume":1.0,
 }

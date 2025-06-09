@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_countdown_beep",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":320,
+  "channelFormat":1,
   "compression":0,
+  "compressionQuality":9,
   "conversionMode":0,
   "duration":1.7827,
+  "exportDir":"",
   "name":"snd_countdown_beep",
   "parent":{
     "name":"Countdown",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":48000,
   "soundFile":"snd_countdown_beep.mp3",
-  "type":1,
   "volume":0.6,
 }

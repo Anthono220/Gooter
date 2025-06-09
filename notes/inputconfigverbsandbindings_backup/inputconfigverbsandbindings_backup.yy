@@ -1,5 +1,5 @@
 {
-  "$GMNotes":"",
+  "$GMNotes":"v1",
   "%Name":"inputconfigverbsandbindings_backup",
   "name":"inputconfigverbsandbindings_backup",
   "parent":{
