@@ -18,9 +18,9 @@ if (pause == 1)
 		draw_set_color(c_white);
 		draw_set_font(fnt_pixelhud)
 		draw_set_halign(fa_center);
-		draw_text(640,256, "Press X for quick settings");
-		draw_text(640,320, "Press B to go back to title screen");
-		draw_text(640,384, "Press select again to go back to the game");
+		draw_text(640,256, "Press R for quick settings");
+		draw_text(640,320, "Press Shift to go back to title screen");
+		draw_text(640,384, "Press ESC again to go back to the game");
 	} else if (pause_screen == 1)
 	{
 		// Draw BG
@@ -39,7 +39,7 @@ if (pause == 1)
 		draw_set_color(c_white);
 		draw_set_font(fnt_pixelhud)
 		draw_set_halign(fa_center);
-		draw_text(640,256, "Press select again to go back to the pause menu");
+		draw_text(640,256, "Press ESC again to go back to the pause menu");
 		draw_text(640,320, "Coming soon");	
 	}
 }

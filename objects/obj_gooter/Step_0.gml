@@ -9,21 +9,11 @@ if (countdown_mode == 0)
 	var right_axis_horizontal = gamepad_axis_value(0, gp_axisrh);
 	var right_axis_vertical = gamepad_axis_value(0, gp_axisrv);
     if (obj_pause.pause != 1) {
-        if(input_check("aim_left")) || (input_check("aim_right")) || (input_check("aim_up")) || (input_check("aim_down")) 
-            {
-                if (controller_mode != 1) controller_mode = 1;
-            
-            }
-        
-            if (controller_mode != 0)
-            {
-                if (right_axis_horizontal != 0 || right_axis_vertical != 0)
-                {
-                    var _angle = point_direction(0, 0, right_axis_horizontal, right_axis_vertical);
-                    var _diff = angle_difference(_angle, image_angle);
-                    image_angle += _diff * 1;
-                }
-            }
+       if stateRoll = 0
+	   {
+		image_angle = point_direction(x,y,mouse_x,mouse_y);
+	   }
+	   
         
             if (input_check("shoot"))
             {
@@ -120,7 +110,7 @@ if (countdown_mode == 0)
                     else
                     {
                         stateRoll = 0;
-            
+                        if sprite_index != spr_gooter {sprite_index = spr_gooter;}
                         with(obj_collision_gooter) 
                         {
                         dashDir = 0;
@@ -135,7 +125,7 @@ if (countdown_mode == 0)
                 if (input_check_pressed("roll")) 
                 {
                     stateRoll = 0;
-            
+                    if sprite_index == spr_gooter_readying || spr_gooter_dash {sprite_index = spr_gooter;}
                     with(obj_collision_gooter) 
                     {
                     dashDir = 0;
@@ -170,19 +160,13 @@ if (countdown_mode == 0)
 		image_angle = 0;
 	}
 
-	if(stateRoll == 0)
-	{
-		image_blend = $FFFFFFFF & $ffffff;
-		image_alpha = ($FFFFFFFF >> 24) / $ff;
-
-	}
-
 	if(stateRoll == 1)
 	{
-
-		image_blend = $FFFFFF99 & $ffffff;
-		image_alpha = ($FFFFFF99 >> 24) / $ff;
-
-		image_angle += -40;
+		if obj_collision_gooter.dash_dir = 0 
+		{
+			image_angle = 0;
+			sprite_index = spr_gooter_readying;
+		}
+		
 	}
 }

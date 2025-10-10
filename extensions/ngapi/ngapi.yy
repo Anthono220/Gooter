@@ -16,18 +16,13 @@
   "exportToGame":true,
   "extensionVersion":"0.0.1",
   "files":[
-    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":-1,"filename":"newgroundsio.js","final":"","functions":[],"init":"","kind":5,"name":"","order":[],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
-    {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":32,"filename":"ng_library.js","final":"","functions":[
+    {"$GMExtensionFile":"v1","%Name":"","constants":[],"copyToTargets":-1,"filename":"newgroundsio.js","final":"","functions":[],"init":"","kind":5,"name":"","origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+    {"$GMExtensionFile":"v1","%Name":"","constants":[],"copyToTargets":32,"filename":"ng_library.js","final":"","functions":[
         {"$GMExtensionFunction":"","%Name":"ng_connect","argCount":0,"args":[1,1,],"documentation":"","externalName":"ng_connect","help":"ng_connect(app_id, encryption_key)","hidden":false,"kind":5,"name":"ng_connect","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
         {"$GMExtensionFunction":"","%Name":"ng_initialize_medals_and_scoreboard","argCount":0,"args":[],"documentation":"","externalName":"ng_initialize","help":"ng_initialize_medals_and_scoreboard()","hidden":false,"kind":5,"name":"ng_initialize_medals_and_scoreboard","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
         {"$GMExtensionFunction":"","%Name":"ng_unlockmedal","argCount":0,"args":[1,],"documentation":"","externalName":"ng_unlockmedal","help":"ng_unlockmedal(medal_name)","hidden":false,"kind":5,"name":"ng_unlockmedal","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
         {"$GMExtensionFunction":"","%Name":"ng_postScore","argCount":0,"args":[1,2,],"documentation":"","externalName":"ng_postScore","help":"ng_postScore(board_id, score_value)","hidden":false,"kind":5,"name":"ng_postScore","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
-      ],"init":"","kind":5,"name":"","order":[
-        {"name":"ng_connect","path":"extensions/ngapi/ngapi.yy",},
-        {"name":"ng_initialize_medals_and_scoreboard","path":"extensions/ngapi/ngapi.yy",},
-        {"name":"ng_unlockmedal","path":"extensions/ngapi/ngapi.yy",},
-        {"name":"ng_postScore","path":"extensions/ngapi/ngapi.yy",},
-      ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+      ],"init":"","kind":5,"name":"","origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
   ],
   "gradleinject":"",
   "hasConvertedCodeInjection":true,

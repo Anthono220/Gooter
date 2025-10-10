@@ -25,17 +25,17 @@ function __input_config_verbs()
 	        blast:  input_binding_mouse_button(mb_right),
 	        action:  input_binding_key(vk_enter),
 	        roll: input_binding_key("R"),
-			shield: input_binding_key("E"),
+			shield: input_binding_key("Q"),
 		
-			aim_up:    input_binding_key(vk_up),
-	        aim_down:  input_binding_key(vk_down),
-	        aim_left:  input_binding_key(vk_left),
-	        aim_right: input_binding_key(vk_right),
+			//aim_up:    input_binding_key(vk_up),
+	        //aim_down:  input_binding_key(vk_down),
+	        //aim_left:  input_binding_key(vk_left),
+	       // aim_right: input_binding_key(vk_right),
         
 	        //No aiming verbs since we use the mouse for that (see below for aiming verb examples)
         
-	        pause: input_binding_key(vk_escape),
-			menu: input_binding_key(vk_tab),
+	        pause: input_binding_key(vk_tab),
+			menu: input_binding_key(vk_escape),
 			select: input_binding_key(vk_enter),
 			back: input_binding_key(vk_shift),
         },
