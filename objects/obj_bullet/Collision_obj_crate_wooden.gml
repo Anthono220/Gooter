@@ -9,7 +9,10 @@ if(obj_aura.auraCHARGE <= 0)
 
 if(obj_aura.auraCHARGE > 0)
 {
-	other.hp += -0.2;
+	if sprite_index == spr_bullet_regular
+    {
+        other.hp += -0.2;
+    }
 }
 
 instance_destroy();
