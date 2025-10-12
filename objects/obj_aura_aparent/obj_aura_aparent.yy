@@ -1,24 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_aura_courage",
+  "%Name":"obj_aura_aparent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_collision_gooter","path":"objects/obj_collision_gooter/obj_collision_gooter.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_aura_courage",
+  "name":"obj_aura_aparent",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
     "path":"folders/Objects/Auras/objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_aura_aparent",
-    "path":"objects/obj_aura_aparent/obj_aura_aparent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -36,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_aura_courage",
-    "path":"sprites/spr_aura_courage/spr_aura_courage.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

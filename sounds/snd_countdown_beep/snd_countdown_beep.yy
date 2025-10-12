@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":9,
   "conversionMode":0,
-  "duration":1.7827,
+  "duration":1.7763333,
   "exportDir":"",
   "name":"snd_countdown_beep",
   "parent":{

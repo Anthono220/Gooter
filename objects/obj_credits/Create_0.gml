@@ -1,6 +1,8 @@
 text = @"
 Gooter
 
+Press shift to go back to the title screen
+
 - Main Developer -
 Anthono220
 

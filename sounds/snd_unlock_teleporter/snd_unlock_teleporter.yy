@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.02925,
+  "duration":4.022875,
   "exportDir":"",
   "name":"snd_unlock_teleporter",
   "parent":{

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 y -= 0.5;
 
-if (y == (0-height))
+if (y == ((0-height) + 500))
 {
 	room_goto(rm_title);
 }

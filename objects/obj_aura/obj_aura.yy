@@ -9,8 +9,8 @@
   "name":"obj_aura",
   "overriddenProperties":[],
   "parent":{
-    "name":"Auras",
-    "path":"folders/Objects/Auras.yy",
+    "name":"objects",
+    "path":"folders/Objects/Auras/objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

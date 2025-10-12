@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.12965,
+  "duration":1.1232709,
   "exportDir":"",
   "name":"snd_unlock_crate",
   "parent":{

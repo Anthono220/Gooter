@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Auras",
-    "path":"folders/Objects/Auras.yy",
+    "name":"sprites",
+    "path":"folders/Objects/Auras/sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
