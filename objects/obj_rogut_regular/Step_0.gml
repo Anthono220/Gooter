@@ -15,9 +15,15 @@ if(stateCower == 0)
         }
 	}
 	
-	if (hp > 5)
+	if (hp >= 5)
 	{
-	   sprite_index = spr_rogut_regular;
+	   if hat_chance != 220
+        {
+            sprite_index = spr_rogut_regular;
+        } else {
+        	sprite_index = spr_rogut_tophat;
+        }
+        
         if (obj_pause.pause != 1)
         {
             speed = 5;

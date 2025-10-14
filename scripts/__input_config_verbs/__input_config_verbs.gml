@@ -21,8 +21,8 @@ function __input_config_verbs()
 	        right: input_binding_key("D"),
         
 	        shoot:  input_binding_mouse_button(mb_left),
-			charge:  input_binding_mouse_button(mb_middle),
-	        blast:  input_binding_mouse_button(mb_right),
+			charge:  input_binding_mouse_button(mb_right),
+	        blast:  input_binding_mouse_button(mb_middle),
 	        action:  input_binding_key(vk_enter),
 	        roll: input_binding_key("R"),
 			shield: input_binding_key("Q"),
