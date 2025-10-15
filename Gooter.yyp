@@ -591,6 +591,7 @@
     {"id":{"name":"seq_red_fadeout","path":"sequences/seq_red_fadeout/seq_red_fadeout.yy",},},
     {"id":{"name":"seq_yellow_fadeout","path":"sequences/seq_yellow_fadeout/seq_yellow_fadeout.yy",},},
     {"id":{"name":"seq_yellow_popup","path":"sequences/seq_yellow_popup/seq_yellow_popup.yy",},},
+    {"id":{"name":"mus_castle","path":"sounds/mus_castle/mus_castle.yy",},},
     {"id":{"name":"snd_aura_collect","path":"sounds/snd_aura_collect/snd_aura_collect.yy",},},
     {"id":{"name":"snd_barrier_hit","path":"sounds/snd_barrier_hit/snd_barrier_hit.yy",},},
     {"id":{"name":"snd_console_open","path":"sounds/snd_console_open/snd_console_open.yy",},},
