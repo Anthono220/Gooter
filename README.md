@@ -1,32 +1,36 @@
-## Gooter
 
-**Play the game**:
-- Newgrounds: https://www.newgrounds.com/projects/games/4782038
-- itch.io: (insert link here)
+<img width="368" height="56" alt="Gooter" src="https://github.com/user-attachments/assets/138bc384-ce46-4f69-b458-bfff6efc2c5c" />
 
-**Follow Anthono220**: 
-- Twitter (Personal): https://twitter.com/Anthono220
-- Twitter (Gooter News): https://twitter.com/GooterGame
-- Newgrounds: https://anthono220.newgrounds.com/
+---
 
-**Support Anthono220 on Ko-Fi**: https://ko-fi.com/anthono220
+itch.io: [https://github.com/Anthono220/Gooter​](https://anthono220.itch.io/gooter)
+
+**Follow Gooter:**
+
+- **YouTube:** https://www.youtube.com/@GooterGame
+- **TikTok:** https://www.tiktok.com/@gooter.game​​​
+
+​**Follow Anthono220:**
+
+- **YouTube:** https://www.youtube.com/@Anthono220.official​
+- **Twitter:** https://twitter.com/Anthono220
+- **Newgrounds:** https://anthono220.newgrounds.com/
+
+**Support Anthono220 on Ko-Fi:** https://ko-fi.com/anthono220
 
 ## Game Description
-
-**Please note that this game currently requires a controller in order to play. 
-Input 5 (https://github.com/JujuAdams/Input) is used in this project, so chances are that most (if not all) of your favorite controllers will be supported.**
 
 Gooter wakes up one day to find his home, the floating islands, being invaded by strange red creatures called Roguts!
 
 Luckily, Gooter's got a gun!... which is his mouth... which is also kind of invisible. Yeah, totally normal stuff.
 
-And now, here's some text that's apparently supposed to make you play this game, if my cries for help won't:
+And now, here's some text that might make you play this game, if my cries for help won't:
 
 - **SLIDE** across many wacky and challenging floating islands!
 - **SHOOT** your enemies and keep them away from you!
 - **BREAK** crates in order to unbox your way to the next level!
 - **COLLECT** different-colored orbs (known as Auras) to activate different abilities!
-- **FIGHT** unique and uniquely intense bosses with all kinds of tricks up their sleeves!
+- **FIGHT** unique and uniquely intense bosses with all kinds of tricks up their sleeves! (This one is coming soon!)
 
 ## License Information
 
@@ -37,6 +41,8 @@ Read LICENSE.md or datafiles/licenses.txt for complete license information.
 Read CONTRIBUTING.md for details on directly contributing to the project.
 
 If you wish to support the game's development, ensure that I can make open source games in the future, and/or simply wanna say thank you, here's the link to my Ko-Fi again: https://ko-fi.com/anthono220
+
+It is recommended that you use the latest beta version of Game Maker before messing with the source code for any reason. 
 
 
 
