@@ -20,8 +20,6 @@ itch.io: [https://github.com/Anthono220/Gooter​](https://anthono220.itch.io/go
 
 ## Game Description
 
-Please note that this game currently requires a controller in order to play. Input (https://github.com/JujuAdams/Input) is used in this project, so chances are that most (if not all) of your favorite controllers will be supported.
-
 Gooter wakes up one day to find his home, the floating islands, being invaded by strange red creatures called Roguts!
 
 Luckily, Gooter's got a gun!... which is his mouth... which is also kind of invisible. Yeah, totally normal stuff.
@@ -34,10 +32,11 @@ And now, here's some text that might make you play this game, if my cries for he
 - **COLLECT** different-colored orbs (known as Auras) to activate different abilities!
 - **FIGHT** unique and uniquely intense bosses with all kinds of tricks up their sleeves! (This one is coming soon!)
 
-License Information
+## License Information
 
 Read LICENSE.md or datafiles/licenses.txt for complete license information.
-YOU can help with development!
+
+## YOU can help with development!
 
 Read CONTRIBUTING.md for details on directly contributing to the project.
 
