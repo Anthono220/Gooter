@@ -1,6 +1,7 @@
 
-<img width="368" height="56" alt="Gooter" src="https://github.com/user-attachments/assets/0180094c-75b2-463a-93bf-a7009cc832ab" />
+<img width="368" height="56" alt="Gooter" src="https://github.com/user-attachments/assets/138bc384-ce46-4f69-b458-bfff6efc2c5c" />
 
+---
 
 itch.io: [https://github.com/Anthono220/Gooter​](https://anthono220.itch.io/gooter)
 
