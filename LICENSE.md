@@ -1,8 +1,8 @@
-The CODE included is licensed under the MIT License (unless specified otherwise by a third-party library). The SFX, CHARACTERS, SPRITES and accompanying CHARACTER SHEETS are licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). The MUSIC is free to use only under the conditions of the Anthono220 Music Usage Policy (https://www.anthono220.com/music-usage-policy).
+The CODE included is licensed under the MIT License (unless specified otherwise by a third-party library). All rights reserved for the SFX, CHARACTERS, SPRITES and accompanying CHARACTER SHEETS for now. The MUSIC is free to use only under the conditions of the [Anthono220 Music Usage Policy](https://github.com/Anthono220/music-usage-policy).
 
 ---
 
-Copyright © 2024 Anthono220
+Copyright © 2025 Anthono220
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
