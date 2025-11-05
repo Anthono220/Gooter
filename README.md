@@ -20,7 +20,7 @@ itch.io: [https://github.com/Anthono220/Gooter​](https://anthono220.itch.io/go
 
 ## Game Description
 
-Please note that this game currently requires a controller in order to play. Input 5 (https://github.com/JujuAdams/Input) is used in this project, so chances are that most (if not all) of your favorite controllers will be supported.
+Please note that this game currently requires a controller in order to play. Input (https://github.com/JujuAdams/Input) is used in this project, so chances are that most (if not all) of your favorite controllers will be supported.
 
 Gooter wakes up one day to find his home, the floating islands, being invaded by strange red creatures called Roguts!
 
