@@ -11,10 +11,10 @@ if (pause_screen == 0)
 	
 	if input_check_pressed("menu")
 	{
+		
 		if (pause == 0)
 		{
 			pause = 1;
-            
             // Deactivate objects
 			//instance_deactivate_object(obj_gooter);
             //instance_deactivate_object(obj_collision_gooter);
@@ -58,6 +58,7 @@ if (pause_screen == 0)
 		{
 			audio_play_sound(snd_select_1,0,0,obj_settings.settings_vol_sfx);
 			pause_screen = 0;
+			
 		}
 	}
 }
