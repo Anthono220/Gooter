@@ -1,5 +1,6 @@
 
-<img width="368" height="56" alt="Gooter" src="https://github.com/user-attachments/assets/138bc384-ce46-4f69-b458-bfff6efc2c5c" />
+<img width="368" height="56" alt="Gooter" src="https://github.com/user-attachments/assets/7f94694f-d557-4847-8010-0c0a30dc0c5a" />
+
 
 ---
 
