@@ -33,6 +33,18 @@ And now, here's some text that might make you play this game, if my cries for he
 - **COLLECT** different-colored orbs (known as Auras) to activate different abilities!
 - **FIGHT** unique and uniquely intense bosses with all kinds of tricks up their sleeves! (This one is coming soon!)
 
+## Controls
+
+- WASD: Movement/Menu Select
+- Enter: OK
+- Mouse: Aim
+- Hold Left Click: Fire Normal Bullets
+- Hold Right: Fire Charged Bullets
+- Middle Click: Blast
+- Q: Fury Shield
+- R: Enter/Exit Dash Mode, then press WASD to dash in a certain direction
+- ESC: Pause
+
 ## License Information
 
 Read LICENSE.md or datafiles/licenses.txt for complete license information.
