@@ -493,8 +493,8 @@
   "swatchColours":null,
   "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"texgr_menu",
+    "path":"texturegroups/texgr_menu",
   },
   "type":0,
   "VTile":false,

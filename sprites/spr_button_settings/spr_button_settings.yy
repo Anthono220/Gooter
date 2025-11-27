@@ -83,8 +83,8 @@
   "swatchColours":null,
   "swfPrecision":2.525,
   "textureGroupId":{
-    "name":"texgr_menus",
-    "path":"texturegroups/texgr_menus",
+    "name":"texgr_menu",
+    "path":"texturegroups/texgr_menu",
   },
   "type":0,
   "VTile":false,

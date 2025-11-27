@@ -83,8 +83,8 @@
   "swatchColours":null,
   "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"texgr_char",
+    "path":"texturegroups/texgr_char",
   },
   "type":0,
   "VTile":false,

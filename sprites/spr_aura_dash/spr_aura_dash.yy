@@ -83,8 +83,8 @@
   "swatchColours":null,
   "swfPrecision":2.525,
   "textureGroupId":{
-    "name":"texgr_obj",
-    "path":"texturegroups/texgr_obj",
+    "name":"texgr_aura",
+    "path":"texturegroups/texgr_aura",
   },
   "type":0,
   "VTile":false,
