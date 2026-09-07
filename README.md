@@ -2,7 +2,13 @@
 <img width="368" height="56" alt="Gooter" src="https://github.com/user-attachments/assets/7f94694f-d557-4847-8010-0c0a30dc0c5a" />
 
 
+
 ---
+![Static Badge](https://img.shields.io/badge/license-MIT-red)
+![GitHub Release](https://img.shields.io/github/v/release/Anthono220/Gooter)
+![GitHub Issues](https://img.shields.io/github/issues/Anthono220/Gooter?color=yellow)
+![Static Badge](https://img.shields.io/badge/engine-GameMaker-green)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Anthono220/Gooter/total?color=blue)
 
 itch.io: [https://github.com/Anthono220/Gooter​](https://anthono220.itch.io/gooter)
 
