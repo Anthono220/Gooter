@@ -15,10 +15,11 @@ For some stuff, however, I'm open to certain kinds of community input right out 
 
 ## Rules and Guidelines
 When making contributions: 
-- Please ensure that you are not hiding any nasty or rude stuff inside. You know what I mean. If I find anything suspicious, I might just have to ban you lol
+- Please ensure that you are not hiding any nasty, malicious, or rude stuff inside. You know what I mean. If I find anything suspicious, I might just have to ban you.
 - I would prefer that, in the code, your comments are in English and that your code is neat and organized so that even a dumb stupid moron (me) could read it.
 - PLEASE open up an issue before you begin work (be sure to check for similar issue first, too!) so that you can see if your issue is even worth working on or if someone else can handle it.
 - Please be aware that if I put you in the credits from a direct contribution, you will be credited as your GitHub username.
+- Please do not generate any code with any form or brand of Artificial Intelligence (AI).
 - Be respectful, mature, and cool, always!
 
 ## Know GameMaker?
